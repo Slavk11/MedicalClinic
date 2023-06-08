@@ -15,7 +15,9 @@ final class InfoCell: UITableViewCell {
    
     func configure(with character: Hospital) {
         newsTitleLabel.text = character.newsTitle
+        newsImageLabel.image = UIImage(named: character.newsImage)
         newsTextLabel.text = character.newsText
+        
        
         
     }

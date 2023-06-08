@@ -169,37 +169,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Главная страница" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CEg-be-pBz">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="infoCell" rowHeight="210" id="yuk-Sp-71s" userLabel="infoCell" customClass="InfoCell" customModule="MedicalClinic" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="94" width="320" height="210"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="infoCell" rowHeight="246" id="yuk-Sp-71s" userLabel="infoCell" customClass="InfoCell" customModule="MedicalClinic" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="320" height="246"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yuk-Sp-71s" id="IBA-mw-vJh">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="210"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="246"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.rectangle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4ia-Eo-hbU">
-                                            <rect key="frame" x="16" y="36" width="150" height="105.5"/>
+                                            <rect key="frame" x="16" y="62" width="250" height="99.5"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="150" id="578-uS-Rce"/>
-                                                <constraint firstAttribute="width" constant="150" id="okV-di-aup"/>
+                                                <constraint firstAttribute="height" constant="250" id="578-uS-Rce"/>
+                                                <constraint firstAttribute="width" constant="250" id="okV-di-aup"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Новость 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulU-U4-4bc">
-                                            <rect key="frame" x="22" y="6" width="78" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Новость 1" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulU-U4-4bc">
+                                            <rect key="frame" x="22" y="6" width="106.5" height="32"/>
+                                            <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="26"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Текст с акциями, предложениями для клиентов" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ubj-Z7-nma">
-                                            <rect key="frame" x="16" y="130" width="280" height="69"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Текст с акциями, предложениями для клиентов" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ubj-Z7-nma">
+                                            <rect key="frame" x="6.5" y="187.5" width="289.5" height="48"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -207,12 +200,13 @@
                                     <constraints>
                                         <constraint firstItem="4ia-Eo-hbU" firstAttribute="leading" secondItem="IBA-mw-vJh" secondAttribute="leadingMargin" id="1jq-uq-AR2"/>
                                         <constraint firstItem="ulU-U4-4bc" firstAttribute="top" secondItem="IBA-mw-vJh" secondAttribute="top" constant="6" id="4mI-3g-AVo"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Ubj-Z7-nma" secondAttribute="trailing" constant="8" id="I8R-r3-LdL"/>
                                         <constraint firstItem="ulU-U4-4bc" firstAttribute="leading" secondItem="IBA-mw-vJh" secondAttribute="leading" constant="22" id="IyV-9g-gDh"/>
-                                        <constraint firstItem="Ubj-Z7-nma" firstAttribute="top" secondItem="4ia-Eo-hbU" secondAttribute="bottom" constant="8" id="Lsl-Fv-e27"/>
-                                        <constraint firstItem="4ia-Eo-hbU" firstAttribute="top" secondItem="ulU-U4-4bc" secondAttribute="bottom" constant="8" symbolic="YES" id="TXo-I2-1Ec"/>
+                                        <constraint firstItem="4ia-Eo-hbU" firstAttribute="top" secondItem="ulU-U4-4bc" secondAttribute="bottom" multiplier="1.4" constant="8" symbolic="YES" id="TXo-I2-1Ec"/>
                                         <constraint firstItem="ulU-U4-4bc" firstAttribute="top" secondItem="IBA-mw-vJh" secondAttribute="top" constant="6" id="Uin-cX-QZB"/>
-                                        <constraint firstItem="Ubj-Z7-nma" firstAttribute="leading" secondItem="4ia-Eo-hbU" secondAttribute="leading" id="bMC-lD-oDb"/>
-                                        <constraint firstItem="4ia-Eo-hbU" firstAttribute="height" secondItem="IBA-mw-vJh" secondAttribute="height" multiplier="0.513699" id="e7F-Il-sPJ"/>
+                                        <constraint firstItem="Ubj-Z7-nma" firstAttribute="leading" secondItem="4ia-Eo-hbU" secondAttribute="leading" multiplier="0.4" id="bMC-lD-oDb"/>
+                                        <constraint firstItem="Ubj-Z7-nma" firstAttribute="top" secondItem="4ia-Eo-hbU" secondAttribute="bottom" multiplier="1.1" constant="8" symbolic="YES" id="byb-Ik-mWa"/>
+                                        <constraint firstItem="4ia-Eo-hbU" firstAttribute="height" secondItem="IBA-mw-vJh" secondAttribute="height" multiplier="0.413699" id="e7F-Il-sPJ"/>
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ulU-U4-4bc" secondAttribute="trailing" constant="20" symbolic="YES" id="gDR-W3-P6e"/>
                                     </constraints>
                                 </tableViewCellContentView>
