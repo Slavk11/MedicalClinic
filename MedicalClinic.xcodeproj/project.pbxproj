@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		791820722A3495360007A0F7 /* NewsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791820712A3495360007A0F7 /* NewsDetailsViewController.swift */; };
 		79766AB22A2C91CC003FC725 /* SpecialistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79766AB12A2C91CC003FC725 /* SpecialistsViewController.swift */; };
 		79766AB42A2C9316003FC725 /* SpecialistsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79766AB32A2C9316003FC725 /* SpecialistsCell.swift */; };
 		79766AB62A2C975D003FC725 /* AnalyzesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79766AB52A2C975D003FC725 /* AnalyzesViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		791820712A3495360007A0F7 /* NewsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsViewController.swift; sourceTree = "<group>"; };
 		79766AB12A2C91CC003FC725 /* SpecialistsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialistsViewController.swift; sourceTree = "<group>"; };
 		79766AB32A2C9316003FC725 /* SpecialistsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialistsCell.swift; sourceTree = "<group>"; };
 		79766AB52A2C975D003FC725 /* AnalyzesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzesViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				79B1102C2A2B249E0055A34E /* AppDelegate.swift */,
 				79B1102E2A2B249E0055A34E /* SceneDelegate.swift */,
 				79B110302A2B249E0055A34E /* MainViewController.swift */,
+				791820712A3495360007A0F7 /* NewsDetailsViewController.swift */,
 				79766AB12A2C91CC003FC725 /* SpecialistsViewController.swift */,
 				79766AB52A2C975D003FC725 /* AnalyzesViewController.swift */,
 				798D441E2A2B6217006590B0 /* InfotCell.swift */,
@@ -172,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				791820722A3495360007A0F7 /* NewsDetailsViewController.swift in Sources */,
 				79B110312A2B249E0055A34E /* MainViewController.swift in Sources */,
 				79B1102D2A2B249E0055A34E /* AppDelegate.swift in Sources */,
 				79766AB42A2C9316003FC725 /* SpecialistsCell.swift in Sources */,

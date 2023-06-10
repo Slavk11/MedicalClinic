@@ -10,6 +10,7 @@ import UIKit
 final class MainViewController: UITableViewController {
     let model = Hospital.getInfo()
 
+    // MARK: - Table view data source
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -24,8 +25,16 @@ final class MainViewController: UITableViewController {
         let model = model[indexPath.row]
         cell.configure(with: model)
         return cell
-        
     }
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let indexPath = tableView.indexPathForSelectedRow {
+            guard let detailVC = segue.destination as? NewsDetailsViewController else { return }
+            detailVC.model = model[indexPath.row]
+        }
+    }
+
 
 }
 
