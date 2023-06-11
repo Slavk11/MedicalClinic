@@ -13,10 +13,10 @@ final class InfoCell: UITableViewCell {
     @IBOutlet var newsTextLabel: UILabel!
 
    
-    func configure(with character: Hospital) {
-        newsTitleLabel.text = character.newsTitle
-        newsImageLabel.image = UIImage(named: character.newsImage)
-        newsTextLabel.text = character.newsText
+    func configure(with hospital: Hospital) {
+        newsTitleLabel.text = hospital.newsTitle
+        newsImageLabel.image = UIImage(named: hospital.newsImage)
+        newsTextLabel.text = hospital.newsText
         
        
         
