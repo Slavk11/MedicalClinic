@@ -8,22 +8,20 @@
 import UIKit
 
 class AnalyzesViewController: UITableViewController {
+    let hospital = Hospital.getInfo()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-    
+    // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 15
+        hospital.count
     }
-    
+   
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "analysisCell", for: indexPath)
-       
-        var content = cell.defaultContentConfiguration()
+        guard let cell = cell as? AnalyzesCell else { return UITableViewCell() }
+        let model = hospital[indexPath.row]
+        cell.configure(with: model)
         return cell
+        
     }
 
 }
