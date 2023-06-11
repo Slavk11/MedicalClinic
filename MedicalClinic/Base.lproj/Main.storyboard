@@ -12,6 +12,7 @@
         <!--Анализы-->
         <scene sceneID="p3v-5R-D4N">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ulf-oo-dgF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController id="SX3-6I-Wj4" customClass="AnalyzesViewController" customModule="MedicalClinic" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="ila-xq-dus">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
@@ -62,15 +63,15 @@
                             <outlet property="delegate" destination="SX3-6I-Wj4" id="WTY-oz-tyI"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Анализы" image="list.bullet.clipboard" catalog="system" id="EnV-W4-j8E"/>
+                    <tabBarItem key="tabBarItem" title="Анализы" image="doc.plaintext.fill" catalog="system" id="EnV-W4-j8E"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ulf-oo-dgF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-397.5" y="482.74647887323943"/>
         </scene>
         <!--Адрес-->
         <scene sceneID="Di1-jC-o51">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KBW-ak-ZUG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="Tvn-UB-v0L" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dd2-dY-Y4n">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
@@ -108,13 +109,13 @@
                     <tabBarItem key="tabBarItem" title="Адрес" image="location.north.fill" catalog="system" id="z5b-m8-dvP"/>
                     <nil key="simulatedTopBarMetrics"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KBW-ak-ZUG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="988.125" y="482.74647887323943"/>
         </scene>
         <!--Личный кабинет-->
         <scene sceneID="Ebv-r3-UgV">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uU8-uW-WXy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="LND-6T-wVQ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="T0I-BB-Qif">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
@@ -157,7 +158,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Личный кабинет" image="person" catalog="system" id="bkg-P9-Cxw"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uU8-uW-WXy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1689.375" y="484.85915492957747"/>
         </scene>
@@ -178,11 +178,16 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.rectangle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4ia-Eo-hbU">
-                                            <rect key="frame" x="20" y="63.000000000000014" width="250" height="98.666666666666643"/>
+                                            <rect key="frame" x="20" y="63.000000000000007" width="250" height="98.666666666666686"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="250" id="578-uS-Rce"/>
                                                 <constraint firstAttribute="width" constant="250" id="okV-di-aup"/>
                                             </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <integer key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Новость 1" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulU-U4-4bc">
                                             <rect key="frame" x="22.000000000000007" y="6" width="106.66666666666669" height="32"/>
@@ -191,7 +196,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Текст с акциями, предложениями для клиентов" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ubj-Z7-nma">
-                                            <rect key="frame" x="8" y="187.33333333333334" width="394" height="48"/>
+                                            <rect key="frame" x="24" y="187.33333333333334" width="378" height="48"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -204,7 +209,7 @@
                                         <constraint firstItem="ulU-U4-4bc" firstAttribute="leading" secondItem="IBA-mw-vJh" secondAttribute="leading" constant="22" id="IyV-9g-gDh"/>
                                         <constraint firstItem="4ia-Eo-hbU" firstAttribute="top" secondItem="ulU-U4-4bc" secondAttribute="bottom" multiplier="1.4" constant="8" symbolic="YES" id="TXo-I2-1Ec"/>
                                         <constraint firstItem="ulU-U4-4bc" firstAttribute="top" secondItem="IBA-mw-vJh" secondAttribute="top" constant="6" id="Uin-cX-QZB"/>
-                                        <constraint firstItem="Ubj-Z7-nma" firstAttribute="leading" secondItem="4ia-Eo-hbU" secondAttribute="leading" multiplier="0.4" id="bMC-lD-oDb"/>
+                                        <constraint firstItem="Ubj-Z7-nma" firstAttribute="leading" secondItem="4ia-Eo-hbU" secondAttribute="leading" multiplier="0.4" constant="16" id="bMC-lD-oDb"/>
                                         <constraint firstItem="Ubj-Z7-nma" firstAttribute="top" secondItem="4ia-Eo-hbU" secondAttribute="bottom" multiplier="1.1" constant="8" symbolic="YES" id="byb-Ik-mWa"/>
                                         <constraint firstItem="4ia-Eo-hbU" firstAttribute="height" secondItem="IBA-mw-vJh" secondAttribute="height" multiplier="0.413699" id="e7F-Il-sPJ"/>
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ulU-U4-4bc" secondAttribute="trailing" constant="20" symbolic="YES" id="gDR-W3-P6e"/>
@@ -241,25 +246,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h2e-kA-WPm">
-                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                                <rect key="frame" x="16" y="155" width="398" height="757"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="center" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="WH1-Fh-OvD">
-                                        <rect key="frame" x="0.0" y="0.0" width="430" height="365.33333333333331"/>
+                                    <stackView opaque="NO" contentMode="center" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="WH1-Fh-OvD">
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="374.66666666666669"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5NT-sK-d0r">
-                                                <rect key="frame" x="0.0" y="0.0" width="430" height="31.333333333333332"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Заголовок новости" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5NT-sK-d0r">
+                                                <rect key="frame" x="52.333333333333343" y="0.0" width="293.66666666666663" height="40.666666666666664"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zzh-Mc-doE">
-                                                <rect key="frame" x="0.0" y="61.333333333333343" width="430" height="250.00000000000003"/>
+                                                <rect key="frame" x="74" y="70.666666666666657" width="250" height="249.99999999999997"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="250" id="5eF-dY-PKR"/>
+                                                    <constraint firstAttribute="width" constant="250" id="l2j-gC-xFo"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ca-Ok-OAN">
-                                                <rect key="frame" x="0.0" y="341.33333333333331" width="430" height="24"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Текст новости" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ca-Ok-OAN">
+                                                <rect key="frame" x="133.66666666666666" y="350.66666666666669" width="130.99999999999997" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -282,10 +293,10 @@
                         <viewLayoutGuide key="safeArea" id="0Mi-2T-5nd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="h2e-kA-WPm" secondAttribute="trailing" id="7k2-8Z-E2h"/>
-                            <constraint firstItem="h2e-kA-WPm" firstAttribute="top" secondItem="EC7-xk-MWQ" secondAttribute="top" id="Est-HE-6AL"/>
-                            <constraint firstItem="h2e-kA-WPm" firstAttribute="leading" secondItem="0Mi-2T-5nd" secondAttribute="leading" id="dqa-Xb-hfX"/>
-                            <constraint firstAttribute="bottom" secondItem="h2e-kA-WPm" secondAttribute="bottom" id="gxs-gp-7m2"/>
+                            <constraint firstAttribute="trailing" secondItem="h2e-kA-WPm" secondAttribute="trailing" constant="16" id="7k2-8Z-E2h"/>
+                            <constraint firstItem="h2e-kA-WPm" firstAttribute="top" secondItem="0Mi-2T-5nd" secondAttribute="top" id="Est-HE-6AL"/>
+                            <constraint firstItem="h2e-kA-WPm" firstAttribute="leading" secondItem="0Mi-2T-5nd" secondAttribute="leading" constant="16" id="dqa-Xb-hfX"/>
+                            <constraint firstAttribute="bottom" secondItem="h2e-kA-WPm" secondAttribute="bottom" constant="20" id="gxs-gp-7m2"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mYX-Ml-3Bb"/>
@@ -297,7 +308,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="czE-EL-KxH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1134" y="1200"/>
+            <point key="canvasLocation" x="-1134.4186046511627" y="1199.3562231759659"/>
         </scene>
         <!--Специалисты-->
         <scene sceneID="Epr-rV-fIa">
@@ -414,9 +425,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="doc.plaintext.fill" catalog="system" width="115" height="128"/>
         <image name="figure.stand" catalog="system" width="74" height="128"/>
         <image name="house" catalog="system" width="128" height="104"/>
-        <image name="list.bullet.clipboard" catalog="system" width="103" height="128"/>
         <image name="location.north.fill" catalog="system" width="110" height="128"/>
         <image name="loupe" catalog="system" width="128" height="113"/>
         <image name="person" catalog="system" width="128" height="121"/>

@@ -20,5 +20,4 @@ final class NewsDetailsViewController: UIViewController {
         newsImage.image = UIImage(named: model.newsImage)
         newsTextLabel.text = model.newsText
     }
-
 }
