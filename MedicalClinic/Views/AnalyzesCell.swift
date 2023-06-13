@@ -11,8 +11,9 @@ class AnalyzesCell: UITableViewCell {
     @IBOutlet var analyzeLabel: UILabel!
     @IBOutlet var analyzePicture: UIImageView!
     
-    func configure(with character: Hospital) {
-        analyzeLabel.text = character.analyzesTitle
+    func configure(with hospital: Hospital) {
+        analyzeLabel.text = hospital.analyzesTitle
+        analyzePicture.image = UIImage(named: hospital.analyzesImage)
     }
 
 }
