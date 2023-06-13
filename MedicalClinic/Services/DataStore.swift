@@ -58,7 +58,18 @@ final class DataStore {
         "Наследственные заболевания"
     ]
     
-    
+    let analyzesImages = [
+        "bloodSample",
+        "bloodTest",
+        "bloodTube",
+        "chemistry",
+        "chemistry2",
+        "chemistry3",
+        "chemistry4",
+        "chemistryFlask",
+        "flask",
+        "laboratory"
+    ]
     
     private init() {}
 }
