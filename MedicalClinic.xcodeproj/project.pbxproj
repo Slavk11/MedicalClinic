@@ -69,6 +69,54 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		79923E652A38ACFF00F31784 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				798D441E2A2B6217006590B0 /* InfoCell.swift */,
+				796E018B2A362B14003656D3 /* AnalyzesCell.swift */,
+				79766AB32A2C9316003FC725 /* SpecialistsCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		79923E662A38AD2500F31784 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				79B110322A2B249E0055A34E /* Main.storyboard */,
+				79B110372A2B249F0055A34E /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		79923E672A38AE1900F31784 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				79B110302A2B249E0055A34E /* MainViewController.swift */,
+				791820712A3495360007A0F7 /* NewsDetailsViewController.swift */,
+				79766AB12A2C91CC003FC725 /* SpecialistsViewController.swift */,
+				79766AB52A2C975D003FC725 /* AnalyzesViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		79923E682A38AE4500F31784 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				79B110352A2B249F0055A34E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		79923E692A38AE5F00F31784 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				79B1102C2A2B249E0055A34E /* AppDelegate.swift */,
+				79B1102E2A2B249E0055A34E /* SceneDelegate.swift */,
+				79B1103A2A2B249F0055A34E /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		79B110202A2B249E0055A34E = {
 			isa = PBXGroup;
 			children = (
@@ -88,21 +136,13 @@
 		79B1102B2A2B249E0055A34E /* MedicalClinic */ = {
 			isa = PBXGroup;
 			children = (
-				79B1102C2A2B249E0055A34E /* AppDelegate.swift */,
-				79B1102E2A2B249E0055A34E /* SceneDelegate.swift */,
-				79B110302A2B249E0055A34E /* MainViewController.swift */,
-				791820712A3495360007A0F7 /* NewsDetailsViewController.swift */,
-				79766AB12A2C91CC003FC725 /* SpecialistsViewController.swift */,
-				79766AB52A2C975D003FC725 /* AnalyzesViewController.swift */,
-				798D441E2A2B6217006590B0 /* InfoCell.swift */,
-				796E018B2A362B14003656D3 /* AnalyzesCell.swift */,
-				79766AB32A2C9316003FC725 /* SpecialistsCell.swift */,
+				79923E692A38AE5F00F31784 /* App */,
+				79923E672A38AE1900F31784 /* ViewControllers */,
+				79923E652A38ACFF00F31784 /* Views */,
 				79766ABC2A2C9A03003FC725 /* Services */,
 				79766AB92A2C99E6003FC725 /* Models */,
-				79B110322A2B249E0055A34E /* Main.storyboard */,
-				79B110352A2B249F0055A34E /* Assets.xcassets */,
-				79B110372A2B249F0055A34E /* LaunchScreen.storyboard */,
-				79B1103A2A2B249F0055A34E /* Info.plist */,
+				79923E662A38AD2500F31784 /* Storyboards */,
+				79923E682A38AE4500F31784 /* Resources */,
 			);
 			path = MedicalClinic;
 			sourceTree = "<group>";
@@ -337,7 +377,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MLZMX2BSJ3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MedicalClinic/Info.plist;
+				INFOPLIST_FILE = MedicalClinic/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -369,7 +409,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MLZMX2BSJ3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MedicalClinic/Info.plist;
+				INFOPLIST_FILE = MedicalClinic/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
