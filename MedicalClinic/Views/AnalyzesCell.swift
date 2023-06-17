@@ -2,18 +2,18 @@
 //  AnalyzesCell.swift
 //  MedicalClinic
 //
-//  Created by Сазонов Станислав on 11.06.2023.
+//  Created by Сазонов Станислав on 17.06.2023.
 //
+
 
 import UIKit
 
 class AnalyzesCell: UITableViewCell {
-    @IBOutlet var analyzeLabel: UILabel!
-    @IBOutlet var analyzePicture: UIImageView!
-    
+
+    @IBOutlet var analyzesName: UILabel!
+    var model: Hospital!
     func configure(with hospital: Hospital) {
-        analyzeLabel.text = hospital.analyzesTitle
-        analyzePicture.image = UIImage(named: hospital.analyzesImage)
+        analyzesName.text = hospital.analyzesTest
     }
 
 }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SpecialistsCell: UIViewController {
+final class SpecialistsCell: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

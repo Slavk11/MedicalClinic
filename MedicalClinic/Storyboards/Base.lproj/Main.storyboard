@@ -12,7 +12,7 @@
         <!--Анализы-->
         <scene sceneID="p3v-5R-D4N">
             <objects>
-                <tableViewController id="SX3-6I-Wj4" customClass="AnalyzesViewController" customModule="MedicalClinic" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="SX3-6I-Wj4" customClass="AnalyzesGroupViewController" customModule="MedicalClinic" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="ila-xq-dus">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,7 +52,7 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="analysisCell" rowHeight="136" id="XMk-5t-9Hw" customClass="AnalyzesCell" customModule="MedicalClinic" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="groupCell" rowHeight="136" id="XMk-5t-9Hw" customClass="GroupCell" customModule="MedicalClinic" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="163" width="430" height="136"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XMk-5t-9Hw" id="HPr-qp-v6l">
@@ -87,7 +87,7 @@
                                 <connections>
                                     <outlet property="analyzeLabel" destination="7XA-1F-dRb" id="ate-zP-SXJ"/>
                                     <outlet property="analyzePicture" destination="hZg-Tr-90V" id="i0e-BW-8t7"/>
-                                    <segue destination="XJV-DB-KIo" kind="show" id="cfC-dC-DhM"/>
+                                    <segue destination="NJ6-BU-BKY" kind="show" id="fkn-Hb-7Q7"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -379,32 +379,49 @@
             </objects>
             <point key="canvasLocation" x="-1134" y="1160"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="udZ-h4-ZMY">
+        <!--Analyzes1 View Controller-->
+        <scene sceneID="z8v-aq-JH4">
             <objects>
-                <tableViewController id="XJV-DB-KIo" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="tmE-hb-LeS">
+                <tableViewController id="NJ6-BU-BKY" customClass="Analyzes1ViewController" customModule="MedicalClinic" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="L47-JO-HQu">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.98476682009396854" green="0.98000949246066438" blue="0.98952414772727271" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="1XI-gN-yew">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="analyzesCell" id="bT3-Bf-wFo" customClass="AnalyzesCell" customModule="MedicalClinic" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="430" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1XI-gN-yew" id="9ON-Ur-pr9">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bT3-Bf-wFo" id="1lA-bA-4C9" customClass="AnalyzesCell" customModule="MedicalClinic" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="430" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4R-Hv-0th">
+                                            <rect key="frame" x="36" y="10.999999999999998" width="41.333333333333343" height="20.333333333333329"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.36581047700000002" green="0.51723957610000004" blue="0.80145202019999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.98968197601010099" green="0.98968197601010099" blue="0.98968197601010099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="B4R-Hv-0th" firstAttribute="top" secondItem="1lA-bA-4C9" secondAttribute="topMargin" id="Klm-3R-UYg"/>
+                                        <constraint firstItem="B4R-Hv-0th" firstAttribute="leading" secondItem="1lA-bA-4C9" secondAttribute="leadingMargin" constant="16" id="bzX-QL-H2L"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="1" green="0.99999994039999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="analyzesLabel" destination="B4R-Hv-0th" id="zhi-v8-bAu"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="XJV-DB-KIo" id="z2U-N6-KBG"/>
-                            <outlet property="delegate" destination="XJV-DB-KIo" id="1Ps-cg-XP1"/>
+                            <outlet property="dataSource" destination="NJ6-BU-BKY" id="yha-x0-DTV"/>
+                            <outlet property="delegate" destination="NJ6-BU-BKY" id="fBi-wF-dcA"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Fao-rG-s3g"/>
+                    <navigationItem key="navigationItem" id="hxA-Ue-07l"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Rn2-BM-HGm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3hg-ye-SeU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-398" y="1159"/>
         </scene>

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SpecialistsViewController: UITableViewController {
+final class SpecialistsViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
