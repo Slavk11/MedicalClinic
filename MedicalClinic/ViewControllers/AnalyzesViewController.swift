@@ -8,6 +8,15 @@
 import UIKit
 
 final class AnalyzesViewController: UITableViewController {
+    @IBOutlet var analyzeTitle: UILabel!
+    @IBOutlet var analyzePicture: UIImageView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        analyzeTitle.text = model.analyzesGroup
+        analyzePicture.image = UIImage(named: model.analyzesImage)
+    }
+    
     var model: Hospital!
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
