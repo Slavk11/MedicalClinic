@@ -1,5 +1,5 @@
 //
-//  AnalyzesViewController.swift
+//  Analyzes1ViewController.swift
 //  MedicalClinic
 //
 //  Created by Сазонов Станислав on 17.06.2023.
@@ -7,20 +7,20 @@
 
 import UIKit
 
-final class AnalyzesViewController: UIViewController {
-    @IBOutlet var groupNameLabel: UILabel!
-    @IBOutlet var analyzesImage: UIImageView!
-    @IBOutlet var analyzesLabel: UILabel!
-    @IBOutlet var analyzesPrice: UILabel!
-    
-    
+final class AnalyzesViewController: UITableViewController {
     var model: Hospital!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        groupNameLabel.text = model.analyzesGroup
-        analyzesImage.image = UIImage(named: model.analyzesImage)
-        analyzesLabel.text = model.analyzesTest
-    }
 
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        model.analyzesTest.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "analyzesCell", for: indexPath)
+        guard let cell = cell as? AnalyzesCell else { return UITableViewCell() }
+        let value = model.analyzesTest[indexPath.row]
+        cell.configure(with: value)
+        return cell
+    }
 }
+
+

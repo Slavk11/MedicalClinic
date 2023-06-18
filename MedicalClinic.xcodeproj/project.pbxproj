@@ -21,7 +21,7 @@
 		79B110342A2B249E0055A34E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B110322A2B249E0055A34E /* Main.storyboard */; };
 		79B110362A2B249F0055A34E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79B110352A2B249F0055A34E /* Assets.xcassets */; };
 		79B110392A2B249F0055A34E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B110372A2B249F0055A34E /* LaunchScreen.storyboard */; };
-		79E5E4782A3E3DFA002B9AF4 /* Analyzes1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E5E4772A3E3DFA002B9AF4 /* Analyzes1ViewController.swift */; };
+		79E5E4782A3E3DFA002B9AF4 /* AnalyzesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E5E4772A3E3DFA002B9AF4 /* AnalyzesViewController.swift */; };
 		79E5E47A2A3E4956002B9AF4 /* AnalizesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E5E4792A3E4956002B9AF4 /* AnalizesCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +42,7 @@
 		79B110352A2B249F0055A34E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79B110382A2B249F0055A34E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79B1103A2A2B249F0055A34E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		79E5E4772A3E3DFA002B9AF4 /* Analyzes1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analyzes1ViewController.swift; sourceTree = "<group>"; };
+		79E5E4772A3E3DFA002B9AF4 /* AnalyzesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzesViewController.swift; sourceTree = "<group>"; };
 		79E5E4792A3E4956002B9AF4 /* AnalizesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalizesCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,7 +100,7 @@
 				791820712A3495360007A0F7 /* NewsDetailsViewController.swift */,
 				79766AB12A2C91CC003FC725 /* SpecialistsViewController.swift */,
 				79766AB52A2C975D003FC725 /* AnalyzesGroupViewController.swift */,
-				79E5E4772A3E3DFA002B9AF4 /* Analyzes1ViewController.swift */,
+				79E5E4772A3E3DFA002B9AF4 /* AnalyzesViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -233,7 +233,7 @@
 				79766AB62A2C975D003FC725 /* AnalyzesGroupViewController.swift in Sources */,
 				79B1102F2A2B249E0055A34E /* SceneDelegate.swift in Sources */,
 				79766AB22A2C91CC003FC725 /* SpecialistsViewController.swift in Sources */,
-				79E5E4782A3E3DFA002B9AF4 /* Analyzes1ViewController.swift in Sources */,
+				79E5E4782A3E3DFA002B9AF4 /* AnalyzesViewController.swift in Sources */,
 				798D441F2A2B6217006590B0 /* InfoCell.swift in Sources */,
 				79766ABB2A2C99FD003FC725 /* DataStore.swift in Sources */,
 				79766AB82A2C99CD003FC725 /* Hospital.swift in Sources */,
