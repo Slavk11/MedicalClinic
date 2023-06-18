@@ -8,11 +8,11 @@
 import UIKit
 
 final class AnalyzesCell: UITableViewCell {
+    
     @IBOutlet var analyzesLabel: UILabel!
-    
-    func configure(with hospital: Hospital) {
-        analyzesLabel.text = hospital.analyzesTest.first
-      
+    func configure(with value: String) {
+        analyzesLabel.text = value
     }
-    
 }
+
+
