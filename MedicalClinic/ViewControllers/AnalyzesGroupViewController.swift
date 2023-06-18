@@ -26,7 +26,7 @@ final class AnalyzesGroupViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let indexPath = tableView.indexPathForSelectedRow {
-            guard let analyzesVC = segue.destination as? Analyzes1ViewController else { return }
+            guard let analyzesVC = segue.destination as? AnalyzesViewController else { return }
             analyzesVC.model = hospital[indexPath.row]
         }
     }
