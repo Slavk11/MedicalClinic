@@ -8,7 +8,7 @@
 import UIKit
 
 final class MainViewController: UITableViewController {
-    let hospital = Hospital.getInfo()
+   private let hospital = Hospital.getInfo()
 
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

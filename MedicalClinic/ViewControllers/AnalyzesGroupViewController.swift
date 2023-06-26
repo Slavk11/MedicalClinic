@@ -8,7 +8,7 @@
 import UIKit
 
 final class AnalyzesGroupViewController: UITableViewController {
-    let hospital = Hospital.getInfo()
+   private let hospital = Hospital.getInfo()
     
 
     // MARK: - Table view data source
