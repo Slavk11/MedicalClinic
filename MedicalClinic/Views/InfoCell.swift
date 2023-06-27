@@ -12,7 +12,6 @@ final class InfoCell: UITableViewCell {
     @IBOutlet var newsImageLabel: UIImageView!
     @IBOutlet var newsTextLabel: UILabel!
 
-   
     func configure(with hospital: Hospital) {
         newsTitleLabel.text = hospital.newsTitle
         newsImageLabel.image = UIImage(named: hospital.newsImage)
