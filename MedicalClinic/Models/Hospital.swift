@@ -12,6 +12,7 @@ struct Hospital {
     let analyzesGroup: String
     let analyzesImage: String
     let analyzesTest: [String]
+    let professions: String
     
     static func getInfo() -> [Hospital] {
         var news: [Hospital] = []
@@ -22,6 +23,7 @@ struct Hospital {
         let analyzesTitle = DataStore.shared.analyzesGroups
         let analyzesImage = DataStore.shared.analyzesImages
         let analyzesTest = DataStore.shared.analyzesDict
+        let professions = DataStore.shared.professions
         
         for index in 0..<analyzesTitle.count {
             
@@ -31,7 +33,8 @@ struct Hospital {
                 newsImage: newsImage[index % newsImage.count],
                 analyzesGroup: analyzesTitle[index],
                 analyzesImage: analyzesImage[index],
-                analyzesTest: analyzesTest[analyzesTitle[index]] ?? []
+                analyzesTest: analyzesTest[analyzesTitle[index]] ?? [],
+                professions: professions[index]
             )
             news.append(model)
         }
