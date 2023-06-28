@@ -8,19 +8,29 @@
 import UIKit
 
 final class ProfessionsViewController: UITableViewController {
+    
+    private let hospital = Hospital.getInfo()
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        hospital.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "professionCell", for: indexPath)
-       
-        var content = cell.defaultContentConfiguration()
+        guard let cell = cell as? ProfessionCell else { return UITableViewCell() }
+        let model = hospital[indexPath.row]
+        cell.configure(with: model)
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let indexPath = tableView.indexPathForSelectedRow {
+            guard let specialistsVC = segue.destination as? SpecialistsViewController else { return }
+            specialistsVC.hospital = hospital[indexPath.row]
+        }
     }
 }

@@ -8,9 +8,14 @@
 import UIKit
 
 final class SpecialistsViewController: UITableViewController {
+    @IBOutlet var professionLabel: UILabel!
+    @IBOutlet var professionImage: UIImageView!
+    
+    var hospital: Hospital!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        professionLabel.text = hospital.professions
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
