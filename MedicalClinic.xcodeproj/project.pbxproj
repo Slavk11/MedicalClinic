@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		791820722A3495360007A0F7 /* NewsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791820712A3495360007A0F7 /* NewsDetailsViewController.swift */; };
+		794809182A4CA7D000867672 /* ProfessionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794809172A4CA7D000867672 /* ProfessionsViewController.swift */; };
 		796E018C2A362B14003656D3 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796E018B2A362B14003656D3 /* GroupCell.swift */; };
 		79766AB22A2C91CC003FC725 /* SpecialistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79766AB12A2C91CC003FC725 /* SpecialistsViewController.swift */; };
 		79766AB42A2C9316003FC725 /* SpecialistsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79766AB32A2C9316003FC725 /* SpecialistsCell.swift */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		791820712A3495360007A0F7 /* NewsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsViewController.swift; sourceTree = "<group>"; };
+		794809172A4CA7D000867672 /* ProfessionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionsViewController.swift; sourceTree = "<group>"; };
 		796E018B2A362B14003656D3 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 		79766AB12A2C91CC003FC725 /* SpecialistsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialistsViewController.swift; sourceTree = "<group>"; };
 		79766AB32A2C9316003FC725 /* SpecialistsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialistsCell.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				791820712A3495360007A0F7 /* NewsDetailsViewController.swift */,
 				79766AB12A2C91CC003FC725 /* SpecialistsViewController.swift */,
 				79766AB52A2C975D003FC725 /* AnalyzesGroupViewController.swift */,
+				794809172A4CA7D000867672 /* ProfessionsViewController.swift */,
 				79E5E4772A3E3DFA002B9AF4 /* AnalyzesViewController.swift */,
 			);
 			path = ViewControllers;
@@ -234,6 +237,7 @@
 				79B1102F2A2B249E0055A34E /* SceneDelegate.swift in Sources */,
 				79766AB22A2C91CC003FC725 /* SpecialistsViewController.swift in Sources */,
 				79E5E4782A3E3DFA002B9AF4 /* AnalyzesViewController.swift in Sources */,
+				794809182A4CA7D000867672 /* ProfessionsViewController.swift in Sources */,
 				798D441F2A2B6217006590B0 /* InfoCell.swift in Sources */,
 				79766ABB2A2C99FD003FC725 /* DataStore.swift in Sources */,
 				79766AB82A2C99CD003FC725 /* Hospital.swift in Sources */,
