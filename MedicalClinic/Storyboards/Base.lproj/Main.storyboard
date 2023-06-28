@@ -145,7 +145,7 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="professionCell" rowHeight="137" id="ctG-hQ-LAx">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="professionCell" rowHeight="137" id="ctG-hQ-LAx" customClass="ProfessionCell" customModule="MedicalClinic" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="164" width="430" height="137"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ctG-hQ-LAx" id="ieX-0A-hRy">
@@ -176,6 +176,11 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.98968197599999996" green="0.98968197599999996" blue="0.98968197599999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="professionImage" destination="0Iv-AQ-ggd" id="KKf-ih-A5e"/>
+                                    <outlet property="professionLabel" destination="pis-WN-N8J" id="9vU-Jt-2Fx"/>
+                                    <segue destination="HHU-LF-B3B" kind="show" id="80o-ab-7zn"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -188,7 +193,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WlK-lA-2ap" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="188" y="485"/>
+            <point key="canvasLocation" x="186.97674418604652" y="484.76394849785413"/>
         </scene>
         <!--Адрес-->
         <scene sceneID="Di1-jC-o51">
@@ -555,18 +560,40 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="0NH-fP-4QK">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" id="QyN-ZM-zc6">
-                            <rect key="frame" x="0.0" y="0.0" width="430" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <textInputTraits key="textInputTraits"/>
-                            <connections>
-                                <outlet property="delegate" destination="HHU-LF-B3B" id="Xxg-GL-BrX"/>
-                            </connections>
-                        </searchBar>
+                        <color key="backgroundColor" red="0.98968197599999996" green="0.98968197599999996" blue="0.98968197599999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="JyO-sM-tD2">
+                            <rect key="frame" x="0.0" y="0.0" width="430" height="149"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="Etk-K4-ZnE">
+                                    <rect key="frame" x="165" y="0.0" width="100" height="149"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WqT-0A-2n6">
+                                            <rect key="frame" x="21.666666666666654" y="0.0" width="56.666666666666657" height="22"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ez9-aj-Ks5">
+                                            <rect key="frame" x="0.0" y="49" width="100" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="4EE-Dy-Ehh"/>
+                                                <constraint firstAttribute="width" constant="100" id="Z8p-ZN-wAo"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.98968197599999996" green="0.98968197599999996" blue="0.98968197599999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="Etk-K4-ZnE" firstAttribute="top" secondItem="JyO-sM-tD2" secondAttribute="top" id="AT1-Ag-eFZ"/>
+                                <constraint firstAttribute="bottom" secondItem="Etk-K4-ZnE" secondAttribute="bottom" id="JU4-xg-Ns0"/>
+                                <constraint firstItem="Etk-K4-ZnE" firstAttribute="centerX" secondItem="JyO-sM-tD2" secondAttribute="centerX" id="cJB-fS-oW8"/>
+                            </constraints>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="specialistCell" rowHeight="299" id="y7h-Kv-hUu">
-                                <rect key="frame" x="0.0" y="94" width="430" height="299"/>
+                                <rect key="frame" x="0.0" y="199" width="430" height="299"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="y7h-Kv-hUu" id="GAR-Tw-2e0">
                                     <rect key="frame" x="0.0" y="0.0" width="430" height="299"/>
@@ -578,18 +605,18 @@
                                                 <constraint firstAttribute="height" constant="28.670000000000002" id="dX7-RK-YxE"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhc-Ac-YEA">
                                             <rect key="frame" x="228" y="28" width="182" height="260"/>
                                             <string key="text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. </string>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="woman-doctor" translatesAutoresizingMaskIntoConstraints="NO" id="2Rw-a3-IGU">
-                                            <rect key="frame" x="20" y="63.666666666666657" width="200" height="199.99999999999997"/>
+                                            <rect key="frame" x="20" y="63.666666666666671" width="200" height="214.33333333333331"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="200" id="T0M-Ry-Fbc"/>
                                                 <constraint firstAttribute="width" constant="200" id="mF2-tt-VYS"/>
@@ -602,6 +629,7 @@
                                         </imageView>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="2Rw-a3-IGU" secondAttribute="bottom" constant="10" id="0wn-91-BlM"/>
                                         <constraint firstItem="edt-Kx-rky" firstAttribute="top" secondItem="GAR-Tw-2e0" secondAttribute="top" constant="10" id="6EX-jA-49r"/>
                                         <constraint firstItem="zhc-Ac-YEA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2Rw-a3-IGU" secondAttribute="trailing" constant="8" symbolic="YES" id="BUW-rP-P62"/>
                                         <constraint firstItem="2Rw-a3-IGU" firstAttribute="leading" secondItem="GAR-Tw-2e0" secondAttribute="leadingMargin" id="BtE-iD-GGc"/>
@@ -613,6 +641,7 @@
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="edt-Kx-rky" secondAttribute="trailing" constant="20" symbolic="YES" id="ofT-YW-uDh"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.98968197599999996" green="0.98968197599999996" blue="0.98968197599999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -621,6 +650,11 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Специалисты" image="figure.stand" catalog="system" id="StC-ft-D3g"/>
+                    <navigationItem key="navigationItem" id="zRY-Yi-l8m"/>
+                    <connections>
+                        <outlet property="professionImage" destination="ez9-aj-Ks5" id="gHH-xs-bu9"/>
+                        <outlet property="professionLabel" destination="WqT-0A-2n6" id="9Rh-ft-XaI"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zkg-jc-EKm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
