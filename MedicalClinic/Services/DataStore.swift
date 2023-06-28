@@ -328,5 +328,18 @@ final class DataStore {
         "Федоров Александр Викторович"
     ]
     
+    let doctorsIcons = [
+        "top-doc",
+        "womandoc2",
+        "withred",
+        "heartDoc",
+        "redhairdoc",
+        "greendoc",
+        "eardoc",
+        "bluedoc",
+        "womandoc",
+        "mandoc"
+    ]
+    
     private init() {}
 }

@@ -13,5 +13,6 @@ final class ProfessionCell: UITableViewCell {
     
     func configure(with model: Hospital) {
         professionLabel.text = model.professions
+        professionImage.image = UIImage(named: model.doctorsIcons)
     }
 }

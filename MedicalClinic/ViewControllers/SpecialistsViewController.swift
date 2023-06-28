@@ -9,7 +9,6 @@ import UIKit
 
 final class SpecialistsViewController: UITableViewController {
     @IBOutlet var professionLabel: UILabel!
-    @IBOutlet var professionImage: UIImageView!
     
     var hospital: Hospital!
 
