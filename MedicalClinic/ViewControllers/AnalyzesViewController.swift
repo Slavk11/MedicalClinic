@@ -11,22 +11,22 @@ final class AnalyzesViewController: UITableViewController {
     @IBOutlet var analyzeTitle: UILabel!
     @IBOutlet var analyzePicture: UIImageView!
     
+    var hospital: Hospital!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        analyzeTitle.text = model.analyzesGroup
-        analyzePicture.image = UIImage(named: model.analyzesImage)
+        analyzeTitle.text = hospital.analyzesGroup
+        analyzePicture.image = UIImage(named: hospital.analyzesImage)
     }
     
-    var model: Hospital!
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        model.analyzesTest.count
+        hospital.analyzesTest.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "analyzesCell", for: indexPath)
         guard let cell = cell as? AnalyzesCell else { return UITableViewCell() }
-        let value = model.analyzesTest[indexPath.row]
+        let value = hospital.analyzesTest[indexPath.row]
         cell.configure(with: value)
         return cell
     }

@@ -27,7 +27,7 @@ final class MainViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let indexPath = tableView.indexPathForSelectedRow {
             guard let detailVC = segue.destination as? NewsDetailsViewController else { return }
-            detailVC.model = hospital[indexPath.row]
+            detailVC.hospital = hospital[indexPath.row]
         }
     }
 

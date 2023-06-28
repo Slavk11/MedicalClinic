@@ -12,12 +12,12 @@ final class NewsDetailsViewController: UIViewController {
     @IBOutlet var newsImage: UIImageView!
     @IBOutlet var newsTextLabel: UILabel!
     
-    var model: Hospital!
+    var hospital: Hospital!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        newsTitleLabel.text = model.newsTitle
-        newsImage.image = UIImage(named: model.newsImage)
-        newsTextLabel.text = model.newsText
+        newsTitleLabel.text = hospital.newsTitle
+        newsImage.image = UIImage(named: hospital.newsImage)
+        newsTextLabel.text = hospital.newsText
     }
 }
