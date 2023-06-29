@@ -16,8 +16,5 @@ final class InfoCell: UITableViewCell {
         newsTitleLabel.text = hospital.newsTitle
         newsImageLabel.image = UIImage(named: hospital.newsImage)
         newsTextLabel.text = hospital.newsText
-        
-       
-        
     }
 }
