@@ -579,7 +579,7 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="specialistCell" rowHeight="299" id="y7h-Kv-hUu">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="specialistCell" rowHeight="299" id="y7h-Kv-hUu" customClass="SpecialistsCell" customModule="MedicalClinic" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="121" width="430" height="299"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="y7h-Kv-hUu" id="GAR-Tw-2e0">
@@ -629,6 +629,11 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.98968197599999996" green="0.98968197599999996" blue="0.98968197599999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="doctorsDescription" destination="zhc-Ac-YEA" id="9XW-LV-kWc"/>
+                                    <outlet property="doctorsName" destination="edt-Kx-rky" id="mcg-Iq-kOz"/>
+                                    <outlet property="doctorsPhoto" destination="2Rw-a3-IGU" id="YlX-qJ-aF5"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
