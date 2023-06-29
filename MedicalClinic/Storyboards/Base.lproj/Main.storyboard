@@ -22,7 +22,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Список доступных услуг" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Crf-bF-Ab4">
-                                    <rect key="frame" x="8" y="20" width="248" height="27"/>
+                                    <rect key="frame" x="16" y="20" width="248" height="27"/>
                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
@@ -43,7 +43,7 @@
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstItem="Crf-bF-Ab4" firstAttribute="leading" secondItem="OOw-it-Yd5" secondAttribute="leadingMargin" id="6dh-G5-l6V"/>
+                                <constraint firstItem="Crf-bF-Ab4" firstAttribute="leading" secondItem="OOw-it-Yd5" secondAttribute="leadingMargin" constant="8" id="6dh-G5-l6V"/>
                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Crf-bF-Ab4" secondAttribute="trailing" constant="20" symbolic="YES" id="J86-75-ew7"/>
                                 <constraint firstItem="Crf-bF-Ab4" firstAttribute="top" secondItem="OOw-it-Yd5" secondAttribute="top" constant="20" id="eY2-Y1-ZzE"/>
                                 <constraint firstItem="ALO-hP-7iW" firstAttribute="leading" secondItem="OOw-it-Yd5" secondAttribute="leading" id="jGk-XH-TTn"/>
@@ -487,7 +487,7 @@
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AYB-fk-MTk">
                                     <rect key="frame" x="120.66666666666669" y="0.0" width="189" height="150"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название группы" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEE-px-nKT">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название группы" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEE-px-nKT">
                                             <rect key="frame" x="0.0" y="0.0" width="189" height="40"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

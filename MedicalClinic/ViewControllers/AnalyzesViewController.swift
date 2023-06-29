@@ -15,18 +15,18 @@ final class AnalyzesViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        analyzeTitle.text = hospital.analyzesGroup
+        analyzeTitle.text = hospital.analyzes
         analyzePicture.image = UIImage(named: hospital.analyzesImage)
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        hospital.analyzesTest.count
+        hospital.analyzesTests.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "analyzesCell", for: indexPath)
         guard let cell = cell as? AnalyzesCell else { return UITableViewCell() }
-        let value = hospital.analyzesTest[indexPath.row]
+        let value = hospital.analyzesTests[indexPath.row]
         cell.configure(with: value)
         return cell
     }
