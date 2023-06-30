@@ -14,17 +14,19 @@ final class SpecialistsViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        professionLabel.text = hospital.professions
+        professionLabel.text = hospital.profession
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        hospital.doctors.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "specialistCell", for: indexPath)
-       
-        var content = cell.defaultContentConfiguration()
+        guard let cell = cell as? SpecialistsCell else { return UITableViewCell() }
+        let value = hospital.doctors[indexPath.row]
+        cell .configure(with: value)
         return cell
     }
+  
 }
