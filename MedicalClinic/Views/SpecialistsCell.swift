@@ -12,5 +12,8 @@ final class SpecialistsCell: UITableViewCell {
     @IBOutlet var doctorsPhoto: UIImageView!
     @IBOutlet var doctorsDescription: UILabel!
     
+    func configure(with value: String) {
+        doctorsName.text = value
+    }
 
 }
