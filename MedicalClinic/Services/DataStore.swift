@@ -288,6 +288,35 @@ final class DataStore {
             "Тест на мутации гена PKD1/PKD2"
         ]
     ]
+    ///
+    let doctorsDescriptions = [
+        [
+            "Стаж 15 лет. Врач - аллерголог высшей категории Кандидат медицинских наук.",
+            "Стаж 18 лет. Врач - аллерголог высшей категории Доктор медицинских наук"
+        ],
+        ["Стаж 8 лет. Заведующий лаборатории", "Стаж работы 6 лет. Врач - лаборант"],
+        ["", ""],
+        [""],
+        ["", "",""],
+        ["", ""],
+        ["", ""],
+        ["", "", ""],
+        ["", ""],
+        ["", ""]
+    ]
+    ///
+    let doctorsPhotos = [
+        ["man-doc1", "woman-doc1"],
+        ["man-doc2", "woman-doc2" ],
+        ["womandoc", "mandoc"],
+        ["eardoc"],
+        ["redhairdoc","greendoc", "top-doc"],
+        ["top-doc", "womandoc2"],
+        ["withred", "top-doc" ],
+        ["womandoc", "mandoc", "eardoc"],
+        ["eardoc", "bluedoc"],
+        ["redhairdoc","greendoc"]
+    ]
     
     let specialists = [
         "Главный врач": [
@@ -331,16 +360,13 @@ final class DataStore {
             "Будьздоров Павел Александрович",
             "Жукова Татьяна Генадьевна"
         ]
-        
-        
-        
     ]
     
     let doctorsIcons = [
-        "top-doc",
+        "heartDoc",
         "womandoc2",
         "withred",
-        "heartDoc",
+        "top-doc",
         "redhairdoc",
         "greendoc",
         "eardoc",
