@@ -128,7 +128,7 @@
                                     </connections>
                                 </searchBar>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Наши специалисты" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jje-R6-sSM">
-                                    <rect key="frame" x="8" y="20" width="195" height="27"/>
+                                    <rect key="frame" x="8" y="20" width="194.66666666666666" height="27"/>
                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
@@ -203,90 +203,121 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Адрес:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6H-gx-P5y">
-                                <rect key="frame" x="25" y="389" width="55" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Наш адрес" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PM5-G9-0Qo">
+                                <rect key="frame" x="16" y="87" width="398" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Как нас найти" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PM5-G9-0Qo">
-                                <rect key="frame" x="104" y="69" width="112" height="20.333333333333329"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vgi-z8-CoU">
-                                <rect key="frame" x="25" y="112" width="271" height="257"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="vgi-z8-CoU">
+                                <rect key="frame" x="13.333333333333343" y="149.66666666666666" width="403.33333333333326" height="418.33333333333337"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Контактная информация:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBB-bQ-2EN">
-                                <rect key="frame" x="25" y="431" width="202" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="ArQ-HN-eDr">
+                                <rect key="frame" x="16" y="583" width="353.33333333333331" height="103"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Город Москва, улица 0, дом 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6H-gx-P5y">
+                                        <rect key="frame" x="0.0" y="0.0" width="235.33333333333334" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="tintColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Контактная информация: +7(495) 000-11-22" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Sy-XK-dkB">
+                                        <rect key="frame" x="0.0" y="41.333333333333371" width="353.33333333333331" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="tintColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="slavk11@yandex.ru" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBB-bQ-2EN">
+                                        <rect key="frame" x="0.0" y="82.666666666666629" width="143" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="tintColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gFB-aV-D2R"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vgi-z8-CoU" firstAttribute="width" secondItem="Dd2-dY-Y4n" secondAttribute="width" multiplier="0.9375" id="0IP-1F-gYr"/>
+                            <constraint firstItem="PM5-G9-0Qo" firstAttribute="top" secondItem="gFB-aV-D2R" secondAttribute="top" constant="28" id="8pM-p1-Kvc"/>
+                            <constraint firstItem="ArQ-HN-eDr" firstAttribute="top" secondItem="vgi-z8-CoU" secondAttribute="bottom" constant="15" id="929-Rc-h81"/>
+                            <constraint firstItem="vgi-z8-CoU" firstAttribute="top" secondItem="PM5-G9-0Qo" secondAttribute="bottom" constant="32.666666666666671" id="MSR-qh-de9"/>
+                            <constraint firstItem="gFB-aV-D2R" firstAttribute="trailing" secondItem="PM5-G9-0Qo" secondAttribute="trailing" constant="16" id="TvQ-MO-Vtq"/>
+                            <constraint firstItem="vgi-z8-CoU" firstAttribute="centerX" secondItem="Dd2-dY-Y4n" secondAttribute="centerX" id="gSh-tT-Kc8"/>
+                            <constraint firstItem="vgi-z8-CoU" firstAttribute="height" secondItem="Dd2-dY-Y4n" secondAttribute="height" multiplier="0.44893" id="mLm-Lm-hbi"/>
+                            <constraint firstItem="PM5-G9-0Qo" firstAttribute="leading" secondItem="gFB-aV-D2R" secondAttribute="leading" constant="16" id="uz7-n5-aRs"/>
+                            <constraint firstItem="ArQ-HN-eDr" firstAttribute="leading" secondItem="gFB-aV-D2R" secondAttribute="leading" constant="16" id="v8h-0y-sEr"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Адрес" image="location.north.fill" catalog="system" id="z5b-m8-dvP"/>
                     <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KBW-ak-ZUG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="989" y="485"/>
+            <point key="canvasLocation" x="987.90697674418607" y="484.76394849785413"/>
         </scene>
         <!--Личный кабинет-->
         <scene sceneID="Ebv-r3-UgV">
             <objects>
-                <viewController id="LND-6T-wVQ" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uU8-uW-WXy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="LND-6T-wVQ" customClass="AuthorizationViewController" customModule="MedicalClinic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="T0I-BB-Qif">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CMC-KG-W0o">
-                                <rect key="frame" x="40" y="171" width="241" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ttV-Er-14E">
-                                <rect key="frame" x="40" y="223" width="241" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Личный кабинет" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y07-oy-y2g">
-                                <rect key="frame" x="95" y="72" width="131" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="go9-E4-ByW">
-                                <rect key="frame" x="40" y="334" width="63" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Вход"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mC-JX-3pV">
-                                <rect key="frame" x="155" y="334" width="126" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Регистрация"/>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Jcp-YI-5XO">
+                                <rect key="frame" x="75" y="303.66666666666669" width="280" height="138.33333333333331"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите Логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CMC-KG-W0o">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="34"/>
+                                        <color key="backgroundColor" red="0.89244002525252519" green="0.89244002525252519" blue="0.89244002525252519" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="username"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ttV-Er-14E">
+                                        <rect key="frame" x="0.0" y="52" width="280" height="34"/>
+                                        <color key="backgroundColor" red="0.89263606070000001" green="0.89263600109999997" blue="0.89263600109999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="urM-Kz-M2F"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="password"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="Nuk-zR-ruA">
+                                        <rect key="frame" x="0.0" y="104" width="280" height="34.333333333333343"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="go9-E4-ByW">
+                                                <rect key="frame" x="0.0" y="0.0" width="126.66666666666667" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Вход"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mC-JX-3pV">
+                                                <rect key="frame" x="153.66666666666666" y="0.0" width="126.33333333333334" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Регистрация"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="edh-zg-IoE"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Jcp-YI-5XO" firstAttribute="centerX" secondItem="T0I-BB-Qif" secondAttribute="centerX" id="WP5-NF-qPA"/>
+                            <constraint firstItem="Jcp-YI-5XO" firstAttribute="centerY" secondItem="T0I-BB-Qif" secondAttribute="centerY" multiplier="0.8" id="aoH-1m-gfT"/>
+                            <constraint firstItem="Jcp-YI-5XO" firstAttribute="centerX" secondItem="T0I-BB-Qif" secondAttribute="centerX" id="z35-ls-FFH"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Личный кабинет" image="person" catalog="system" id="bkg-P9-Cxw"/>
+                    <connections>
+                        <outlet property="loginTextField" destination="CMC-KG-W0o" id="JgE-ZO-TIU"/>
+                        <outlet property="passwordTextField" destination="ttV-Er-14E" id="hsV-Wm-IHs"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uU8-uW-WXy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1689.375" y="484.85915492957747"/>
+            <point key="canvasLocation" x="1786.046511627907" y="484.76394849785413"/>
         </scene>
         <!--Медицинский центр-->
         <scene sceneID="SvA-bo-Wrg">
@@ -704,13 +735,14 @@
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="location.north.fill" catalog="system" width="110" height="128"/>
         <image name="loupe" catalog="system" width="128" height="113"/>
+        <image name="map" width="1164" height="1164"/>
         <image name="person" catalog="system" width="128" height="121"/>
         <image name="person.3" catalog="system" width="128" height="62"/>
         <image name="person.crop.rectangle" catalog="system" width="128" height="93"/>
         <image name="rosette" catalog="system" width="107" height="128"/>
         <image name="woman-doctor" width="350" height="350"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
