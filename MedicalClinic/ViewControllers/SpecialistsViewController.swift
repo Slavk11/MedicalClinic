@@ -9,7 +9,6 @@ import UIKit
 
 final class SpecialistsViewController: UITableViewController {
     @IBOutlet var professionLabel: UILabel!
-    
     var hospital: Hospital!
 
     override func viewDidLoad() {
@@ -24,10 +23,10 @@ final class SpecialistsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "specialistCell", for: indexPath)
         guard let cell = cell as? SpecialistsCell else { return UITableViewCell() }
-        let description = hospital.doctors[indexPath.row]
-        let test = hospital.doctorsDescriptions[indexPath.row]
-        let test22 = hospital.doctorsPhotos[indexPath.row]
-        cell.configure(with: description, description: test, photos: test22)
+        let specialist = hospital.doctors[indexPath.row]
+        let description = hospital.doctorsDescriptions[indexPath.row]
+        let image = hospital.doctorsPhotos[indexPath.row]
+        cell.configure(with: specialist, description: description, photos: image)
         return cell
     }
 }
