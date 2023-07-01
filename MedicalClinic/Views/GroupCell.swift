@@ -12,8 +12,7 @@ final class GroupCell: UITableViewCell {
     @IBOutlet var analyzePicture: UIImageView!
     
     func configure(with hospital: Hospital) {
-        
-        analyzeLabel.text = hospital.analyzes
+        analyzeLabel.text = hospital.analyze
         analyzePicture.image = UIImage(named: hospital.analyzesImage)
     }
 }

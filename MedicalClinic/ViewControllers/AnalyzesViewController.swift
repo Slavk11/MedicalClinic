@@ -15,7 +15,7 @@ final class AnalyzesViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        analyzeTitle.text = hospital.analyzes
+        analyzeTitle.text = hospital.analyze
         analyzePicture.image = UIImage(named: hospital.analyzesImage)
     }
     

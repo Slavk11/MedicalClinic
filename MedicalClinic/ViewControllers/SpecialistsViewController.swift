@@ -14,7 +14,7 @@ final class SpecialistsViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        professionLabel.text = hospital.profession
+        professionLabel.text = hospital.specialist
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -24,9 +24,14 @@ final class SpecialistsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "specialistCell", for: indexPath)
         guard let cell = cell as? SpecialistsCell else { return UITableViewCell() }
-        let value = hospital.doctors[indexPath.row]
-        cell .configure(with: value)
+        let description = hospital.doctors[indexPath.row]
+        let test = hospital.doctorsDescriptions[indexPath.row]
+        let test22 = hospital.doctorsPhotos[indexPath.row]
+        cell.configure(with: description, description: test, photos: test22)
         return cell
     }
-  
 }
+
+    
+   
+

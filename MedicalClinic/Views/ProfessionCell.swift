@@ -12,7 +12,7 @@ final class ProfessionCell: UITableViewCell {
     @IBOutlet var professionImage: UIImageView!
     
     func configure(with model: Hospital) {
-        professionLabel.text = model.profession
-        professionImage.image = UIImage(named: model.doctorsIcons)
+        professionLabel.text = model.specialist
+        professionImage.image = UIImage(named: model.doctorsIcon)
     }
 }
