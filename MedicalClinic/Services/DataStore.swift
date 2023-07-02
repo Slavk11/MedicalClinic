@@ -305,14 +305,14 @@ final class DataStore {
     let doctorsPhotos = [
         ["man-doc1", "woman-doc1"],
         ["man-doc2", "woman-doc2" ],
-        ["womandoc", "mandoc"],
-        ["eardoc"],
-        ["redhairdoc","greendoc", "top-doc"],
-        ["top-doc", "womandoc2"],
-        ["withred", "top-doc" ],
-        ["womandoc", "mandoc", "eardoc"],
+        ["man-doc3", "man-doc4"],
+        ["man-doc5"],
+        ["man-doc6","woman-doc3", "man-doc7"],
+        ["woman-doc4", "man-doc8"],
+        ["woman-doc5", "man-doc9" ],
+        ["man-doc10", "woman-doc6", "man-doc11"],
         ["eardoc", "bluedoc"],
-        ["redhairdoc","greendoc"]
+        ["woman-doc7","woman-doc8"]
     ]
     
     let specialists = [
