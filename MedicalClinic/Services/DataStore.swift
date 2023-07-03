@@ -311,7 +311,7 @@ final class DataStore {
         ["woman-doc4", "man-doc8"],
         ["woman-doc5", "man-doc9" ],
         ["man-doc10", "woman-doc6", "man-doc11"],
-        ["eardoc", "bluedoc"],
+        ["man-doc12", "man-doc13"],
         ["woman-doc7","woman-doc8"]
     ]
     
