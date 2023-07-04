@@ -51,12 +51,12 @@ struct Hospital {
     }
 }
 
-struct User {
+struct Patient {
     let login: String
     let password: String
     
-    static func getUser() -> User {
-        User(
+    static func getUser() -> Patient {
+        Patient(
             login: "User",
             password: "Password"
         )
