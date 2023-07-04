@@ -158,11 +158,11 @@ final class DataStore {
         "bloodTest",
         "bloodTube",
         "chemistry",
+        "chemistry1",
         "chemistry2",
         "chemistry3",
         "chemistry4",
         "chemistryFlask",
-        "flask",
         "laboratory"
     ]
   
