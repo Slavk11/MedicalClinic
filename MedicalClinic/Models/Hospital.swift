@@ -50,3 +50,15 @@ struct Hospital {
         return news
     }
 }
+
+struct User {
+    let login: String
+    let password: String
+    
+    static func getUser() -> User {
+        User(
+            login: "User",
+            password: "Password"
+        )
+    }
+}
