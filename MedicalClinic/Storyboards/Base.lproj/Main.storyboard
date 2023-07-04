@@ -306,12 +306,20 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Личный кабинет" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ZW-Bl-ogy">
+                                <rect key="frame" x="115.00000000000001" y="243.66666666666666" width="200.33333333333337" height="32.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" systemColor="tintColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="edh-zg-IoE"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Jcp-YI-5XO" firstAttribute="top" secondItem="3ZW-Bl-ogy" secondAttribute="bottom" multiplier="1.1" id="1Hy-G6-Fk6"/>
                             <constraint firstItem="Jcp-YI-5XO" firstAttribute="centerX" secondItem="T0I-BB-Qif" secondAttribute="centerX" id="WP5-NF-qPA"/>
                             <constraint firstItem="Jcp-YI-5XO" firstAttribute="centerY" secondItem="T0I-BB-Qif" secondAttribute="centerY" multiplier="0.8" id="aoH-1m-gfT"/>
+                            <constraint firstItem="3ZW-Bl-ogy" firstAttribute="centerX" secondItem="T0I-BB-Qif" secondAttribute="centerX" id="dr9-MQ-MEP"/>
                             <constraint firstItem="Jcp-YI-5XO" firstAttribute="centerX" secondItem="T0I-BB-Qif" secondAttribute="centerX" id="z35-ls-FFH"/>
                         </constraints>
                     </view>
