@@ -296,6 +296,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="126.66666666666667" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Вход"/>
+                                                <connections>
+                                                    <action selector="logInButtonTapped" destination="LND-6T-wVQ" eventType="touchUpInside" id="0CV-9e-ZVX"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mC-JX-3pV">
                                                 <rect key="frame" x="153.66666666666666" y="0.0" width="126.33333333333334" height="34.333333333333336"/>
@@ -332,11 +335,62 @@
                     <connections>
                         <outlet property="loginTextField" destination="CMC-KG-W0o" id="JgE-ZO-TIU"/>
                         <outlet property="passwordTextField" destination="ttV-Er-14E" id="hsV-Wm-IHs"/>
+                        <segue destination="dXt-K0-Iin" kind="presentation" identifier="showWelcomeVC" modalPresentationStyle="fullScreen" id="6KV-9y-5LZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uU8-uW-WXy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1786.046511627907" y="484.76394849785413"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="Hoz-0M-Zcb">
+            <objects>
+                <viewController id="yDR-Oy-GF2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="deX-ka-BdM">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="5nJ-7G-LdV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="eDj-bx-WtA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zVb-Bc-7vq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3423" y="868"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="HYp-fN-QYW">
+            <objects>
+                <viewController id="fag-X3-c3J" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RcP-nZ-RX3">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="EU0-wB-McN"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="Oih-6n-oy1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ad6-18-ubb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3423" y="182"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="zMx-39-wp4">
+            <objects>
+                <tabBarController id="dXt-K0-Iin" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dLD-SP-Oxz">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="fag-X3-c3J" kind="relationship" relationship="viewControllers" id="D4v-2Z-cRk"/>
+                        <segue destination="yDR-Oy-GF2" kind="relationship" relationship="viewControllers" id="ROs-K3-mx6"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jGR-jB-n2X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2544" y="486"/>
         </scene>
         <!--Медицинский центр-->
         <scene sceneID="SvA-bo-Wrg">
@@ -760,6 +814,9 @@
         <image name="person" catalog="system" width="128" height="121"/>
         <image name="person.3" catalog="system" width="128" height="62"/>
         <image name="woman-doctor" width="350" height="350"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
