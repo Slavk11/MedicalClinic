@@ -11,7 +11,7 @@ final class AuthorizationViewController: UIViewController {
     @IBOutlet var loginTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
-    private let user = User.getUser()
+    private let user = Patient.getUser()
     
     override func viewDidLoad() {
         super.viewDidLoad()
