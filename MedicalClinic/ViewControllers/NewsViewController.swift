@@ -7,9 +7,9 @@
 
 import UIKit
 
-final class MainViewController: UITableViewController {
-   private let hospital = Hospital.getInfo()
-
+final class NewsViewController: UITableViewController {
+    var hospital: [Hospital] = []
+    
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         hospital.count
@@ -30,7 +30,6 @@ final class MainViewController: UITableViewController {
             detailVC.hospital = hospital[indexPath.row]
         }
     }
-
-
+    
 }
 

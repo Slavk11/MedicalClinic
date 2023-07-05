@@ -11,6 +11,7 @@ final class AuthorizationViewController: UIViewController {
     @IBOutlet var loginTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
+    var hospital: [Hospital] = []
     private let user = Patient.getUser()
     
     override func viewDidLoad() {
@@ -45,4 +46,10 @@ final class AuthorizationViewController: UIViewController {
         alert.addAction(okAction)
         present(alert, animated: true)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let userAccountVC = segue.destination as? UserAccountViewController else {return}
+        userAccountVC.hospital = hospital
+    }
+    
 }

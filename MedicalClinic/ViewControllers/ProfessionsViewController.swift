@@ -9,11 +9,7 @@ import UIKit
 
 final class ProfessionsViewController: UITableViewController {
     
-    private let hospital = Hospital.getInfo()
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+    var hospital: [Hospital] = []
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         hospital.count

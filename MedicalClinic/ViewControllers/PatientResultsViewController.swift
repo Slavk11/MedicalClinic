@@ -9,19 +9,12 @@ import UIKit
 
 final class PatientResultsViewController: UITableViewController {
     
-    private let hospital = Hospital.getInfo()
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-       
-    }
-
+    var hospital: [Hospital] = []
+    
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    
-        return 5
+        hospital.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

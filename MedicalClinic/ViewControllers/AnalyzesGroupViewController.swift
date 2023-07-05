@@ -8,8 +8,7 @@
 import UIKit
 
 final class AnalyzesGroupViewController: UITableViewController {
-   private let hospital = Hospital.getInfo()
-    
+    var hospital: [Hospital] = []
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         hospital.count
