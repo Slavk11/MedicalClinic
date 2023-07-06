@@ -9,11 +9,14 @@ import UIKit
 
 final class ResultCell: UITableViewCell {
     @IBOutlet var testLabel: UILabel!
-    @IBOutlet var statusImage: UIImageView!
+    @IBOutlet var testStatus: UILabel!
     
     func configure(with model: Hospital) {
         testLabel.text = model.analyze
-       
+        testStatus.text = model.executionStatus
+        
+        let statusColor = UIColor.getColorForStatus(model.executionStatus)
+        testStatus.textColor = statusColor
     }
     
 }
