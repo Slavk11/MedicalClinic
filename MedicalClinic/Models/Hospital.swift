@@ -18,6 +18,10 @@ struct Hospital {
     let doctorsDescriptions: [String]
     let doctorsPhotos: [String]
     
+    let executionStatus: String
+    let analyzesResult: String
+    let analyzesResultStatus: String
+    
     static func getInfo() -> [Hospital] {
         var news: [Hospital] = []
         
@@ -31,6 +35,9 @@ struct Hospital {
         let doctorsDescriptions = DataStore.shared.doctorsDescriptions
         let testPic = DataStore.shared.doctorsPhotos
         
+        let executionStatus = DataStore.shared.executionStatus
+        let analyzesResults = DataStore.shared.analyzesResults.sorted { $0 < $1 }
+        
         for index in 0..<newsTitle.count {
             let model = Hospital(
                 newsTitle: newsTitle[index % newsTitle.count],
@@ -43,7 +50,11 @@ struct Hospital {
                 specialist: specialists[index].key,
                 doctors: specialists[index].value,
                 doctorsDescriptions: doctorsDescriptions[index],
-                doctorsPhotos: testPic[index]
+                doctorsPhotos: testPic[index],
+                
+                executionStatus: executionStatus[index],
+                analyzesResult: analyzesResults[index % analyzesResults.count].key,
+                analyzesResultStatus: analyzesResults[index % analyzesResults.count].value
             )
             news.append(model)
         }
