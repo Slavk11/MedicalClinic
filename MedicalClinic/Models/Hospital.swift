@@ -70,7 +70,7 @@ struct Patient {
     
     static func getUser() -> Patient {
         Patient(
-            login: "User",
+            login: "Пациент",
             password: "Password"
         )
     }

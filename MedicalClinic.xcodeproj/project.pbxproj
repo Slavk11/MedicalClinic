@@ -135,9 +135,9 @@
 				794809172A4CA7D000867672 /* ProfessionsViewController.swift */,
 				79766AB12A2C91CC003FC725 /* SpecialistsViewController.swift */,
 				7948091B2A50AFD900867672 /* AuthorizationViewController.swift */,
+				79FFFBC82A55E07E00D2FBCA /* UserAccountViewController.swift */,
 				7948091D2A54AAE800867672 /* PatientResultsViewController.swift */,
 				79FFFBCA2A55EA7F00D2FBCA /* PatientTestsViewController.swift */,
-				79FFFBC82A55E07E00D2FBCA /* UserAccountViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";

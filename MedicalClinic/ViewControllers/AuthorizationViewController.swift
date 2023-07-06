@@ -12,13 +12,13 @@ final class AuthorizationViewController: UIViewController {
     @IBOutlet var passwordTextField: UITextField!
     
     var hospital: [Hospital] = []
-    private let user = Patient.getUser()
+    private let patient = Patient.getUser()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        loginTextField.text = user.login
-        passwordTextField.text = user.password
+        loginTextField.text = patient.login
+        passwordTextField.text = patient.password
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -27,7 +27,7 @@ final class AuthorizationViewController: UIViewController {
     }
     
     @IBAction func logInButtonTapped() {
-        guard loginTextField.text == user.login, passwordTextField.text == user.password else {
+        guard loginTextField.text == patient.login, passwordTextField.text == patient.password else {
             showAlert(
                 title: "Неверный логин или пароль",
                 message: "Пожалуйста проверьте корректность вводимых данных",
@@ -50,6 +50,7 @@ final class AuthorizationViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let userAccountVC = segue.destination as? UserAccountViewController else {return}
         userAccountVC.hospital = hospital
+        userAccountVC.patient = patient
     }
     
 }
