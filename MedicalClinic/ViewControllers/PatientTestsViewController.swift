@@ -8,7 +8,6 @@
 import UIKit
 
 final class PatientTestsViewController: UITableViewController {
-    var hospitals: [Hospital] = []
     var hospital: Hospital!
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -18,9 +17,10 @@ final class PatientTestsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "patientTestCell", for: indexPath)
         guard let cell = cell as? PatientTestCell else { return UITableViewCell() }
+        let result = hospital.analyzesResult[indexPath.row]
         let value = hospital.analyzesTests[indexPath.row]
-        let result = hospitals[indexPath.row]
-        cell.configure(with: value, result: result)
+        let status = hospital.analyzesResultStatus[indexPath.row]
+        cell.configure(with: value, result: result, status: status)
         return cell
     }
 }

@@ -12,12 +12,12 @@ final class PatientTestCell: UITableViewCell {
     @IBOutlet var patientTestResult: UILabel!
     @IBOutlet var testResultStatus: UILabel!
     
-    func configure(with value: String, result: Hospital) {
+    func configure(with value: String, result: String, status: String) {
         patientTest.text = value
-        patientTestResult.text = result.analyzesResult
-        testResultStatus.text = result.analyzesResultStatus
+        patientTestResult.text = result
+        testResultStatus.text = status
         
-        let color = UIColor.getColorForStatus(result.analyzesResultStatus)
+        let color = UIColor.getColorForStatus(status)
         patientTestResult.textColor = color
         testResultStatus.textColor = color
         

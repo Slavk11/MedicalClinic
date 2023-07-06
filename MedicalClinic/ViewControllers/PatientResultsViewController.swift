@@ -29,7 +29,6 @@ final class PatientResultsViewController: UITableViewController {
         if let indexPath = tableView.indexPathForSelectedRow {
             guard let patientTestsVC = segue.destination as? PatientTestsViewController else { return }
             patientTestsVC.hospital = hospital[indexPath.row]
-            patientTestsVC.hospitals = hospital
         }
     }
 }
