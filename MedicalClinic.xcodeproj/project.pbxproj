@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79152BBB2A56CDAD0048949D /* Extension + UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79152BBA2A56CDAD0048949D /* Extension + UIColor.swift */; };
 		791820722A3495360007A0F7 /* NewsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791820712A3495360007A0F7 /* NewsDetailsViewController.swift */; };
 		794809182A4CA7D000867672 /* ProfessionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794809172A4CA7D000867672 /* ProfessionsViewController.swift */; };
 		7948091A2A4CAEA000867672 /* ProfessionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794809192A4CAEA000867672 /* ProfessionCell.swift */; };
@@ -30,9 +31,12 @@
 		79E5E4782A3E3DFA002B9AF4 /* AnalyzesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E5E4772A3E3DFA002B9AF4 /* AnalyzesViewController.swift */; };
 		79E5E47A2A3E4956002B9AF4 /* AnalizesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E5E4792A3E4956002B9AF4 /* AnalizesCell.swift */; };
 		79FFFBC92A55E07E00D2FBCA /* UserAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FFFBC82A55E07E00D2FBCA /* UserAccountViewController.swift */; };
+		79FFFBCB2A55EA7F00D2FBCA /* PatientTestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FFFBCA2A55EA7F00D2FBCA /* PatientTestsViewController.swift */; };
+		79FFFBCD2A55EBBD00D2FBCA /* PatientTestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FFFBCC2A55EBBD00D2FBCA /* PatientTestCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		79152BBA2A56CDAD0048949D /* Extension + UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIColor.swift"; sourceTree = "<group>"; };
 		791820712A3495360007A0F7 /* NewsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsViewController.swift; sourceTree = "<group>"; };
 		794809172A4CA7D000867672 /* ProfessionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionsViewController.swift; sourceTree = "<group>"; };
 		794809192A4CAEA000867672 /* ProfessionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionCell.swift; sourceTree = "<group>"; };
@@ -58,6 +62,8 @@
 		79E5E4772A3E3DFA002B9AF4 /* AnalyzesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzesViewController.swift; sourceTree = "<group>"; };
 		79E5E4792A3E4956002B9AF4 /* AnalizesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalizesCell.swift; sourceTree = "<group>"; };
 		79FFFBC82A55E07E00D2FBCA /* UserAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountViewController.swift; sourceTree = "<group>"; };
+		79FFFBCA2A55EA7F00D2FBCA /* PatientTestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientTestsViewController.swift; sourceTree = "<group>"; };
+		79FFFBCC2A55EBBD00D2FBCA /* PatientTestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientTestCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79152BBC2A56CDC30048949D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				79152BBA2A56CDAD0048949D /* Extension + UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		79766AB92A2C99E6003FC725 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +110,7 @@
 				79766AB32A2C9316003FC725 /* SpecialistsCell.swift */,
 				79E5E4792A3E4956002B9AF4 /* AnalizesCell.swift */,
 				79DD1DBB2A54AE92009BF7C1 /* ResultCell.swift */,
+				79FFFBCC2A55EBBD00D2FBCA /* PatientTestCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -121,6 +136,7 @@
 				79766AB12A2C91CC003FC725 /* SpecialistsViewController.swift */,
 				7948091B2A50AFD900867672 /* AuthorizationViewController.swift */,
 				7948091D2A54AAE800867672 /* PatientResultsViewController.swift */,
+				79FFFBCA2A55EA7F00D2FBCA /* PatientTestsViewController.swift */,
 				79FFFBC82A55E07E00D2FBCA /* UserAccountViewController.swift */,
 			);
 			path = ViewControllers;
@@ -163,6 +179,7 @@
 		79B1102B2A2B249E0055A34E /* MedicalClinic */ = {
 			isa = PBXGroup;
 			children = (
+				79152BBC2A56CDC30048949D /* Extensions */,
 				79923E692A38AE5F00F31784 /* App */,
 				79923E672A38AE1900F31784 /* ViewControllers */,
 				79923E652A38ACFF00F31784 /* Views */,
@@ -256,6 +273,7 @@
 				79766AB62A2C975D003FC725 /* AnalyzesGroupViewController.swift in Sources */,
 				79B1102F2A2B249E0055A34E /* SceneDelegate.swift in Sources */,
 				79DD1DBE2A5534BE009BF7C1 /* TabBarController.swift in Sources */,
+				79FFFBCD2A55EBBD00D2FBCA /* PatientTestCell.swift in Sources */,
 				7948091A2A4CAEA000867672 /* ProfessionCell.swift in Sources */,
 				79766AB22A2C91CC003FC725 /* SpecialistsViewController.swift in Sources */,
 				79E5E4782A3E3DFA002B9AF4 /* AnalyzesViewController.swift in Sources */,
@@ -265,6 +283,8 @@
 				79766ABB2A2C99FD003FC725 /* DataStore.swift in Sources */,
 				79766AB82A2C99CD003FC725 /* Hospital.swift in Sources */,
 				79FFFBC92A55E07E00D2FBCA /* UserAccountViewController.swift in Sources */,
+				79FFFBCB2A55EA7F00D2FBCA /* PatientTestsViewController.swift in Sources */,
+				79152BBB2A56CDAD0048949D /* Extension + UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
