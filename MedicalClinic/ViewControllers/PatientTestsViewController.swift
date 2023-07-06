@@ -11,7 +11,7 @@ final class PatientTestsViewController: UITableViewController {
     var hospital: Hospital!
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        hospital.doctors.count
+        hospital.analyzesResult.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
