@@ -507,52 +507,87 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="86" translatesAutoresizingMaskIntoConstraints="NO" id="5Vn-R0-mYU">
-                                <rect key="frame" x="54" y="182.33333333333334" width="322" height="287.66666666666663"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2xY-Tx-Fqb">
+                                <rect key="frame" x="16" y="154.66666666666663" width="398" height="623"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="71" translatesAutoresizingMaskIntoConstraints="NO" id="aJh-Rl-pBP">
-                                        <rect key="frame" x="0.0" y="0.0" width="322" height="125"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="63" translatesAutoresizingMaskIntoConstraints="NO" id="5Vn-R0-mYU">
+                                        <rect key="frame" x="54.333333333333343" y="183.33333333333334" width="289.66666666666663" height="256.33333333333326"/>
                                         <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Личный кабинет пациента" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEy-n2-7Rf">
+                                                <rect key="frame" x="0.0" y="0.0" width="289.66666666666669" height="30.666666666666668"/>
+                                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добро пожаловать пациент!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rt3-DE-Aiw">
-                                                <rect key="frame" x="0.0" y="0.0" width="322" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                <color key="textColor" red="0.036229775880000002" green="0.0334235461" blue="0.037109375" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <rect key="frame" x="19.333333333333343" y="93.666666666666686" width="251.00000000000003" height="23"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Что бы вы хотели посмотреть?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6w-DY-R8Y">
-                                                <rect key="frame" x="0.0" y="100.99999999999997" width="322" height="24"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <color key="textColor" red="0.036229775880000002" green="0.0334235461" blue="0.037109375" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Osa-Du-g5a">
-                                        <rect key="frame" x="39.333333333333329" y="210.99999999999997" width="243.33333333333337" height="76.666666666666657"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZyW-PA-Kzn">
-                                                <rect key="frame" x="25" y="0.0" width="193.66666666666669" height="34.333333333333336"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Результаты анализов"/>
-                                                <connections>
-                                                    <segue destination="4pM-4K-RE7" kind="show" id="63Z-Fz-4wn"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2f-9q-j3s">
-                                                <rect key="frame" x="0.0" y="42.333333333333371" width="243.33333333333334" height="34.333333333333343"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Посмотреть запись к врачу"/>
-                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Osa-Du-g5a">
+                                                <rect key="frame" x="47.999999999999986" y="179.66666666666663" width="193.66666666666663" height="76.666666666666686"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZyW-PA-Kzn">
+                                                        <rect key="frame" x="0.0" y="0.0" width="193.66666666666666" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Результаты анализов"/>
+                                                        <buttonConfiguration key="configuration" style="filled">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="Результаты анализов"/>
+                                                            </attributedString>
+                                                            <color key="baseBackgroundColor" red="0.32553958890000001" green="0.7324806452" blue="0.18712335820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="4pM-4K-RE7" kind="show" id="63Z-Fz-4wn"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2f-9q-j3s">
+                                                        <rect key="frame" x="0.33333333333334281" y="42.333333333333371" width="193" height="34.333333333333343"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="193" id="e18-7c-qhi"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="Запись к Врачу"/>
+                                                            </attributedString>
+                                                            <color key="baseBackgroundColor" red="0.32553958890000001" green="0.7324806452" blue="0.18712335820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                            </stackView>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31707884933774833" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="5Vn-R0-mYU" firstAttribute="centerY" secondItem="2xY-Tx-Fqb" secondAttribute="centerY" id="8Qj-Xl-nmP"/>
+                                    <constraint firstItem="5Vn-R0-mYU" firstAttribute="centerX" secondItem="2xY-Tx-Fqb" secondAttribute="centerX" id="jse-zW-xpU"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="yQq-Ja-wae">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nUQ-S4-8hg"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="5Vn-R0-mYU" firstAttribute="centerX" secondItem="5gB-Dc-YbW" secondAttribute="centerX" id="Ii1-ib-qQW"/>
-                            <constraint firstItem="5Vn-R0-mYU" firstAttribute="centerY" secondItem="5gB-Dc-YbW" secondAttribute="centerY" multiplier="0.7" id="qPw-o8-4Z5"/>
+                            <constraint firstItem="nUQ-S4-8hg" firstAttribute="top" secondItem="2xY-Tx-Fqb" secondAttribute="top" constant="0.5" id="EK6-vf-KRD"/>
+                            <constraint firstItem="2xY-Tx-Fqb" firstAttribute="centerX" secondItem="5gB-Dc-YbW" secondAttribute="centerX" id="Gil-9B-rNF"/>
+                            <constraint firstItem="yQq-Ja-wae" firstAttribute="trailing" secondItem="nUQ-S4-8hg" secondAttribute="trailing" id="J7O-tV-1R7"/>
+                            <constraint firstItem="2xY-Tx-Fqb" firstAttribute="centerY" secondItem="5gB-Dc-YbW" secondAttribute="centerY" id="KeY-SK-gbn"/>
+                            <constraint firstItem="yQq-Ja-wae" firstAttribute="top" secondItem="5gB-Dc-YbW" secondAttribute="top" id="Xm0-2e-N7m"/>
+                            <constraint firstAttribute="bottom" secondItem="yQq-Ja-wae" secondAttribute="bottom" id="gAj-hE-nyM"/>
+                            <constraint firstItem="2xY-Tx-Fqb" firstAttribute="leading" secondItem="nUQ-S4-8hg" secondAttribute="leading" constant="16" id="oe5-RL-aeY"/>
+                            <constraint firstItem="nUQ-S4-8hg" firstAttribute="trailing" secondItem="2xY-Tx-Fqb" secondAttribute="trailing" constant="16" id="oxB-TH-Tvd"/>
+                            <constraint firstItem="yQq-Ja-wae" firstAttribute="leading" secondItem="5gB-Dc-YbW" secondAttribute="leading" id="vfb-ro-cdd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="eLJ-90-9XP"/>
@@ -562,7 +597,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ek9-FB-xnx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1786" y="1167"/>
+            <point key="canvasLocation" x="1784.6511627906978" y="1166.5236051502147"/>
         </scene>
         <!--Медицинский центр-->
         <scene sceneID="SvA-bo-Wrg">
@@ -975,6 +1010,7 @@
     </scenes>
     <resources>
         <image name="Logo" width="2000" height="2000"/>
+        <image name="background" width="800" height="1200"/>
         <image name="bloodSample" width="512" height="512"/>
         <image name="doc.plaintext.fill" catalog="system" width="115" height="128"/>
         <image name="figure.stand" catalog="system" width="74" height="128"/>
