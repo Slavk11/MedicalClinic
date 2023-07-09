@@ -100,7 +100,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ulf-oo-dgF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-604.18604651162786" y="484.76394849785413"/>
+            <point key="canvasLocation" x="-603" y="485"/>
         </scene>
         <!--Специалисты-->
         <scene sceneID="cTS-FD-86c">
@@ -358,13 +358,13 @@
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5fO-Ei-foH">
                                     <rect key="frame" x="130.33333333333337" y="-22" width="169.66666666666663" height="48.666666666666664"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Здравствуйте!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3v-T8-FTW">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Здравствуйте!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3v-T8-FTW">
                                             <rect key="frame" x="27.333333333333321" y="0.0" width="114.66666666666669" height="20.333333333333332"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Результаты анализов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1F0-KA-rLU">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Результаты анализов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1F0-KA-rLU">
                                             <rect key="frame" x="0.0" y="28.333333333333336" width="169.66666666666666" height="20.333333333333336"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.036229775880000002" green="0.0334235461" blue="0.037109375" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -565,6 +565,7 @@
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31707884933774833" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="5Vn-R0-mYU" firstAttribute="centerY" secondItem="2xY-Tx-Fqb" secondAttribute="centerY" id="8Qj-Xl-nmP"/>
                                     <constraint firstItem="5Vn-R0-mYU" firstAttribute="centerX" secondItem="2xY-Tx-Fqb" secondAttribute="centerX" id="jse-zW-xpU"/>
@@ -602,22 +603,103 @@
             </objects>
             <point key="canvasLocation" x="1784.6511627906978" y="1166.5236051502147"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Patient Appointments View Controller-->
         <scene sceneID="drH-AF-uL6">
             <objects>
-                <tableViewController id="Kk9-7t-YLl" sceneMemberID="viewController">
+                <tableViewController id="Kk9-7t-YLl" customClass="PatientAppointmentsViewController" customModule="MedicalClinic" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="cqV-Qw-4vr">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.99045138888888884" green="0.99045138888888884" blue="0.99045138888888884" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="FrQ-u7-F1R">
+                            <rect key="frame" x="0.0" y="0.0" width="430" height="34"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваша запись к Специалистам" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ax1-XS-bIA">
+                                    <rect key="frame" x="33.333333333333343" y="0.0" width="363.33333333333326" height="30"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="Ax1-XS-bIA" firstAttribute="centerX" secondItem="FrQ-u7-F1R" secondAttribute="centerX" id="6Bu-Iz-HdM"/>
+                                <constraint firstItem="Ax1-XS-bIA" firstAttribute="top" secondItem="FrQ-u7-F1R" secondAttribute="top" id="Z90-AS-FLw"/>
+                            </constraints>
+                        </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Iu4-7I-poS">
-                                <rect key="frame" x="0.0" y="50" width="430" height="43.666667938232422"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="appointmentsCell" rowHeight="247" id="Iu4-7I-poS" customClass="PatientAppointmentsCell" customModule="MedicalClinic" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="84" width="430" height="247"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Iu4-7I-poS" id="GMF-M9-zyM">
-                                    <rect key="frame" x="0.0" y="0.0" width="430" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="430" height="247"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="1ac-I8-xFq">
+                                            <rect key="frame" x="19.999999999999993" y="11" width="123.33333333333331" height="55"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Профессия" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buu-QF-dLI">
+                                                    <rect key="frame" x="0.0" y="0.0" width="123.33333333333333" height="26.333333333333332"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Имя Доктора" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PM4-zd-oOf">
+                                                    <rect key="frame" x="0.0" y="41.333333333333336" width="123.33333333333333" height="13.666666666666664"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greendoc" translatesAutoresizingMaskIntoConstraints="NO" id="Ycx-YC-Y8b">
+                                            <rect key="frame" x="20" y="81" width="150" height="150"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="150" id="2cU-UD-Gbc"/>
+                                                <constraint firstAttribute="width" constant="150" id="Poj-C8-ZTV"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <integer key="value" value="75"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="PUY-3i-Ad5">
+                                            <rect key="frame" x="215" y="104" width="151.66666666666663" height="47.666666666666657"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Время посещения" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xr6-Yn-PeA">
+                                                    <rect key="frame" x="0.0" y="0.0" width="151.66666666666666" height="20.333333333333332"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <color key="textColor" systemColor="tintColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iro-m0-jZ2">
+                                                    <rect key="frame" x="61.999999999999993" y="27.333333333333343" width="27.666666666666664" height="20.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="1ac-I8-xFq" firstAttribute="top" secondItem="GMF-M9-zyM" secondAttribute="topMargin" id="3jC-EW-jN6"/>
+                                        <constraint firstItem="PUY-3i-Ad5" firstAttribute="top" secondItem="GMF-M9-zyM" secondAttribute="top" constant="104" id="7Fg-8B-1sj"/>
+                                        <constraint firstItem="Ycx-YC-Y8b" firstAttribute="leading" secondItem="GMF-M9-zyM" secondAttribute="leadingMargin" id="8pf-Mg-JI7"/>
+                                        <constraint firstItem="Ycx-YC-Y8b" firstAttribute="top" secondItem="1ac-I8-xFq" secondAttribute="bottom" constant="15" id="Fxa-Gv-Awm"/>
+                                        <constraint firstItem="1ac-I8-xFq" firstAttribute="leading" secondItem="GMF-M9-zyM" secondAttribute="leadingMargin" id="pZf-ZZ-fWV"/>
+                                        <constraint firstItem="PUY-3i-Ad5" firstAttribute="leading" secondItem="Ycx-YC-Y8b" secondAttribute="trailing" constant="45" id="rRN-a4-FPm"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Ycx-YC-Y8b" secondAttribute="bottom" constant="5" id="xNV-cd-SSC"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="doctorsImage" destination="Ycx-YC-Y8b" id="mLd-xp-lCb"/>
+                                    <outlet property="doctorsNameLabel" destination="PM4-zd-oOf" id="aKp-D3-vIC"/>
+                                    <outlet property="doctorsProfessionLabel" destination="buu-QF-dLI" id="9di-48-83L"/>
+                                    <outlet property="visitTimeLabel" destination="Iro-m0-jZ2" id="qMq-N5-Lyr"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -625,11 +707,18 @@
                             <outlet property="delegate" destination="Kk9-7t-YLl" id="EiS-jh-wsC"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Oed-wR-DTM"/>
+                    <navigationItem key="navigationItem" id="Oed-wR-DTM">
+                        <nil key="title"/>
+                        <view key="titleView" contentMode="scaleToFill" id="6dg-Y2-jFN">
+                            <rect key="frame" x="215" y="22" width="0.0" height="0.0"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="giD-NK-iUW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2249" y="1891"/>
+            <point key="canvasLocation" x="2247.9069767441861" y="1890.7725321888413"/>
         </scene>
         <!--Медицинский центр-->
         <scene sceneID="SvA-bo-Wrg">
