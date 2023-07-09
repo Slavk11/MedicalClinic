@@ -16,11 +16,13 @@ final class UserAccountViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         welcomeLabel.text = "Добро пожаловать \(patient.login)!"
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let patientResultsVC = segue.destination as? PatientResultsViewController else {return}
-        patientResultsVC.hospital = hospital
+        if let patientResultsVC = segue.destination as? PatientResultsViewController {
+            patientResultsVC.hospital = hospital
+        } else if let patientAppointmentVC = segue.destination as? PatientAppointmentsViewController {
+            patientAppointmentVC.hospital = hospital
+        } else { return }
     }
 }
