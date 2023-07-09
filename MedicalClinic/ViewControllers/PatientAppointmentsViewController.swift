@@ -8,7 +8,6 @@
 import UIKit
 
 final class PatientAppointmentsViewController: UITableViewController {
-    
     var hospital: [Hospital] = []
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
