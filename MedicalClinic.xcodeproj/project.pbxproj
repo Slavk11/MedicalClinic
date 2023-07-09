@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		790A10172A5AABC200031F1C /* PatientAppointmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790A10162A5AABC200031F1C /* PatientAppointmentsViewController.swift */; };
+		790A10192A5AB01A00031F1C /* PatientAppointmentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790A10182A5AB01A00031F1C /* PatientAppointmentsCell.swift */; };
 		79152BBB2A56CDAD0048949D /* Extension + UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79152BBA2A56CDAD0048949D /* Extension + UIColor.swift */; };
 		791820722A3495360007A0F7 /* NewsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791820712A3495360007A0F7 /* NewsDetailsViewController.swift */; };
 		794809182A4CA7D000867672 /* ProfessionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794809172A4CA7D000867672 /* ProfessionsViewController.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		790A10162A5AABC200031F1C /* PatientAppointmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientAppointmentsViewController.swift; sourceTree = "<group>"; };
+		790A10182A5AB01A00031F1C /* PatientAppointmentsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientAppointmentsCell.swift; sourceTree = "<group>"; };
 		79152BBA2A56CDAD0048949D /* Extension + UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIColor.swift"; sourceTree = "<group>"; };
 		791820712A3495360007A0F7 /* NewsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsViewController.swift; sourceTree = "<group>"; };
 		794809172A4CA7D000867672 /* ProfessionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionsViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 				79E5E4792A3E4956002B9AF4 /* AnalizesCell.swift */,
 				79DD1DBB2A54AE92009BF7C1 /* ResultCell.swift */,
 				79FFFBCC2A55EBBD00D2FBCA /* PatientTestCell.swift */,
+				790A10182A5AB01A00031F1C /* PatientAppointmentsCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 				79FFFBC82A55E07E00D2FBCA /* UserAccountViewController.swift */,
 				7948091D2A54AAE800867672 /* PatientResultsViewController.swift */,
 				79FFFBCA2A55EA7F00D2FBCA /* PatientTestsViewController.swift */,
+				790A10162A5AABC200031F1C /* PatientAppointmentsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -264,6 +270,7 @@
 			files = (
 				79E5E47A2A3E4956002B9AF4 /* AnalizesCell.swift in Sources */,
 				791820722A3495360007A0F7 /* NewsDetailsViewController.swift in Sources */,
+				790A10192A5AB01A00031F1C /* PatientAppointmentsCell.swift in Sources */,
 				7948091E2A54AAE800867672 /* PatientResultsViewController.swift in Sources */,
 				79B110312A2B249E0055A34E /* NewsViewController.swift in Sources */,
 				79B1102D2A2B249E0055A34E /* AppDelegate.swift in Sources */,
@@ -282,6 +289,7 @@
 				798D441F2A2B6217006590B0 /* InfoCell.swift in Sources */,
 				79766ABB2A2C99FD003FC725 /* DataStore.swift in Sources */,
 				79766AB82A2C99CD003FC725 /* Hospital.swift in Sources */,
+				790A10172A5AABC200031F1C /* PatientAppointmentsViewController.swift in Sources */,
 				79FFFBC92A55E07E00D2FBCA /* UserAccountViewController.swift in Sources */,
 				79FFFBCB2A55EA7F00D2FBCA /* PatientTestsViewController.swift in Sources */,
 				79152BBB2A56CDAD0048949D /* Extension + UIColor.swift in Sources */,
