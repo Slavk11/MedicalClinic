@@ -15,7 +15,7 @@ final class UserAccountViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        welcomeLabel.text = "Добро пожаловать \(patient.login)!"
+        welcomeLabel.text = "Добро пожаловать, \(patient.login)!"
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
