@@ -10,12 +10,12 @@ import UIKit
 final class UserAccountViewController: UIViewController {
     @IBOutlet var welcomeLabel: UILabel!
     
-    var patient: Hospital!
+    var account: Hospital!
     var hospital: [Hospital] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        welcomeLabel.text = "Добро пожаловать, \(patient.patient.login)!"
+        welcomeLabel.text = "Добро пожаловать, \(account.patient.login)!"
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

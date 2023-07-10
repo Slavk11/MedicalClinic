@@ -51,7 +51,7 @@ final class AuthorizationViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let userAccountVC = segue.destination as? UserAccountViewController else {return}
         userAccountVC.hospital = hospital
-        userAccountVC.patient = account
+        userAccountVC.account = account
     }
     
 }
