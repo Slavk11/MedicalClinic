@@ -8,7 +8,6 @@
 import UIKit
 
 final class PatientResultsViewController: UITableViewController {
-    
     var hospital: [Hospital] = []
     
     // MARK: - Table view data source

@@ -8,7 +8,6 @@
 import UIKit
 
 final class TabBarController: UITabBarController {
-    
     private let hospital = Hospital.getInfo()
     
     override func viewDidLoad() {
@@ -32,5 +31,4 @@ final class TabBarController: UITabBarController {
             }
         }
     }
-    
 }

@@ -8,7 +8,6 @@
 import UIKit
 
 final class ProfessionsViewController: UITableViewController {
-    
     var hospital: [Hospital] = []
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
