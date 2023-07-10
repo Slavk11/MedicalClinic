@@ -28,6 +28,7 @@ final class TabBarController: UITabBarController {
                 professionsVC.hospital = hospital
             } else if let authVC = $0 as? AuthorizationViewController {
                 authVC.hospital = hospital
+                authVC.account = hospital.first
             }
         }
     }

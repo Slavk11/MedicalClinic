@@ -21,6 +21,7 @@ struct Hospital {
     let analyzesResult: [String]
     let analyzesResultStatus: [String]
     let schedule: String
+    let patient: Patient
     
     static func getInfo() -> [Hospital] {
         var news: [Hospital] = []
@@ -55,7 +56,8 @@ struct Hospital {
                 executionStatus: executionStatus[index],
                 analyzesResult: analyzesResult[index % analyzesResult.count],
                 analyzesResultStatus: analyzesStatus[index % analyzesStatus.count],
-                schedule: schedule[index % schedule.count]
+                schedule: schedule[index % schedule.count],
+                patient: Patient.getUser()
             )
             news.append(model)
         }
