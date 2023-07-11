@@ -10,6 +10,7 @@ import UIKit
 final class ProfessionsViewController: UITableViewController {
     var hospital: [Hospital] = []
     
+    // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         hospital.count
     }
@@ -22,6 +23,7 @@ final class ProfessionsViewController: UITableViewController {
         return cell
     }
     
+    // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let indexPath = tableView.indexPathForSelectedRow {
             guard let specialistsVC = segue.destination as? SpecialistsViewController else { return }

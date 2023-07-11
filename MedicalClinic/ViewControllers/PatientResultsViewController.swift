@@ -11,7 +11,6 @@ final class PatientResultsViewController: UITableViewController {
     var hospital: [Hospital] = []
     
     // MARK: - Table view data source
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }
@@ -24,6 +23,7 @@ final class PatientResultsViewController: UITableViewController {
         return cell
     }
     
+    // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let indexPath = tableView.indexPathForSelectedRow {
             guard let patientTestsVC = segue.destination as? PatientTestsViewController else { return }

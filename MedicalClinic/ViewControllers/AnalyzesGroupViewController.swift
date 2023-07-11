@@ -9,6 +9,7 @@ import UIKit
 
 final class AnalyzesGroupViewController: UITableViewController {
     var hospital: [Hospital] = []
+    
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         hospital.count
@@ -22,6 +23,7 @@ final class AnalyzesGroupViewController: UITableViewController {
         return cell
     }
     
+    // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let indexPath = tableView.indexPathForSelectedRow {
             guard let analyzesVC = segue.destination as? AnalyzesViewController else { return }
