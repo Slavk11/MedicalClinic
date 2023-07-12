@@ -28,6 +28,7 @@ final class AnalyzesViewController: UITableViewController {
         guard let cell = cell as? AnalyzesCell else { return UITableViewCell() }
         let value = hospital.analyzesTests[indexPath.row]
         cell.configure(with: value)
+        tableView.allowsSelection = false
         return cell
     }
 }

@@ -21,6 +21,7 @@ final class PatientTestsViewController: UITableViewController {
         let value = hospital.analyzesTests[indexPath.row]
         let status = hospital.analyzesResultStatus[indexPath.row]
         cell.configure(with: value, result: result, status: status)
+        tableView.allowsSelection = false
         return cell
     }
 }

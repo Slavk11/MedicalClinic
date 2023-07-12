@@ -19,6 +19,7 @@ final class PatientAppointmentsViewController: UITableViewController {
         guard let cell = cell as? PatientAppointmentsCell else { return UITableViewCell ()}
         let model = hospital[indexPath.row]
         cell.configure(with: model)
+        tableView.allowsSelection = false
         return cell
     }
     

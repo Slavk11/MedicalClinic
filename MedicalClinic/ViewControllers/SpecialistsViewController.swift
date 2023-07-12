@@ -27,6 +27,7 @@ final class SpecialistsViewController: UITableViewController {
         let description = hospital.doctorsDescriptions[indexPath.row]
         let image = hospital.doctorsPhotos[indexPath.row]
         cell.configure(with: specialist, description: description, photos: image)
+        tableView.allowsSelection = false
         return cell
     }
 }
