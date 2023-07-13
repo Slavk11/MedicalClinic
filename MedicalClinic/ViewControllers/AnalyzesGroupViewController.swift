@@ -8,17 +8,28 @@
 import UIKit
 
 final class AnalyzesGroupViewController: UITableViewController {
+    
+    @IBOutlet var searchBar: UISearchBar!
+    
     var hospital: [Hospital] = []
+    var filteredAnalyze: [Hospital] = []
+    
+    // MARK: - View Life Cycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        searchBar.delegate = self
+        filteredAnalyze = hospital
+    }
     
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        hospital.count
+        filteredAnalyze.count
     }
-   
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "groupCell", for: indexPath)
         guard let cell = cell as? GroupCell else { return UITableViewCell() }
-        let model = hospital[indexPath.row]
+        let model = filteredAnalyze[indexPath.row]
         cell.configure(with: model)
         return cell
     }
@@ -29,6 +40,14 @@ final class AnalyzesGroupViewController: UITableViewController {
             guard let analyzesVC = segue.destination as? AnalyzesViewController else { return }
             analyzesVC.hospital = hospital[indexPath.row]
         }
+    }
+}
+
+// MARK: - UISearchBarDelegate
+extension AnalyzesGroupViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        filteredAnalyze = searchText.isEmpty ? hospital : hospital.filter { $0.analyze.contains(searchText) }
+        tableView.reloadData()
     }
 }
 
