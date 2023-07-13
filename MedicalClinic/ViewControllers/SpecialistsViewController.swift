@@ -8,14 +8,17 @@
 import UIKit
 
 final class SpecialistsViewController: UITableViewController {
+    
     @IBOutlet var professionLabel: UILabel!
     var hospital: Hospital!
 
+    // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         professionLabel.text = hospital.specialist
     }
     
+    // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         hospital.doctors.count
     }
