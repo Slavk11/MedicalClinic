@@ -97,6 +97,9 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Анализы" image="doc.plaintext.fill" catalog="system" id="EnV-W4-j8E"/>
+                    <connections>
+                        <outlet property="searchBar" destination="ALO-hP-7iW" id="fMV-25-CfD"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ulf-oo-dgF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -190,6 +193,9 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Специалисты" image="person.3" catalog="system" id="uk1-AS-wBE"/>
                     <navigationItem key="navigationItem" id="jRC-ty-Qhc"/>
+                    <connections>
+                        <outlet property="searchBar" destination="vxK-Be-FwA" id="FRa-sm-BeB"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WlK-lA-2ap" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
