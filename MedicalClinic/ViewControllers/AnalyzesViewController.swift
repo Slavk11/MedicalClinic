@@ -8,17 +8,20 @@
 import UIKit
 
 final class AnalyzesViewController: UITableViewController {
+    
     @IBOutlet var analyzeTitle: UILabel!
     @IBOutlet var analyzePicture: UIImageView!
     
     var hospital: Hospital!
     
+    // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         analyzeTitle.text = hospital.analyze
         analyzePicture.image = UIImage(named: hospital.analyzesImage)
     }
     
+    // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         hospital.analyzesTests.count
     }
