@@ -133,7 +133,7 @@
                                     </connections>
                                 </searchBar>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Наши специалисты" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jje-R6-sSM">
-                                    <rect key="frame" x="15" y="20" width="194.66666666666666" height="27"/>
+                                    <rect key="frame" x="15" y="20" width="195" height="27"/>
                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
@@ -523,27 +523,27 @@
                                 <rect key="frame" x="16" y="154.66666666666663" width="398" height="623"/>
                                 <subviews>
                                     <stackView opaque="NO" alpha="0.75" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="63" translatesAutoresizingMaskIntoConstraints="NO" id="5Vn-R0-mYU">
-                                        <rect key="frame" x="49" y="185" width="300" height="253"/>
+                                        <rect key="frame" x="54.333333333333343" y="185" width="289.66666666666663" height="253"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Личный кабинет пациента" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEy-n2-7Rf">
-                                                <rect key="frame" x="5.3333333333333428" y="0.0" width="289.66666666666663" height="30.666666666666668"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="289.66666666666669" height="30.666666666666668"/>
                                                 <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="25"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добро пожаловать пациент!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rt3-DE-Aiw">
-                                                <rect key="frame" x="24.666666666666686" y="93.666666666666629" width="251" height="23"/>
+                                                <rect key="frame" x="19.333333333333343" y="93.666666666666629" width="251.00000000000003" height="23"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Osa-Du-g5a">
-                                                <rect key="frame" x="0.0" y="179.66666666666669" width="300" height="73.333333333333314"/>
+                                                <rect key="frame" x="9.6666666666666856" y="179.66666666666669" width="270" height="73.333333333333314"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZyW-PA-Kzn">
-                                                        <rect key="frame" x="0.0" y="0.0" width="300" height="32.666666666666664"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="270" height="32.666666666666664"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="31d-xa-rIO"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="270" id="31d-xa-rIO"/>
                                                         </constraints>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Результаты анализов"/>
@@ -563,9 +563,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2f-9q-j3s">
-                                                        <rect key="frame" x="0.0" y="40.666666666666629" width="300" height="32.666666666666657"/>
+                                                        <rect key="frame" x="0.0" y="40.666666666666629" width="270" height="32.666666666666657"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="2vZ-YR-KX2"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="270" id="2vZ-YR-KX2"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled">
@@ -697,12 +697,16 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:00" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iro-m0-jZ2">
-                                                    <rect key="frame" x="45.666666666666686" y="27.333333333333343" width="43" height="20.333333333333329"/>
+                                                    <rect key="frame" x="0.0" y="27.333333333333343" width="134" height="20.333333333333329"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Xr6-Yn-PeA" firstAttribute="leading" secondItem="PUY-3i-Ad5" secondAttribute="leadingMargin" id="8JC-IP-eVL"/>
+                                                <constraint firstItem="Iro-m0-jZ2" firstAttribute="leading" secondItem="PUY-3i-Ad5" secondAttribute="leading" id="gTK-fs-mNr"/>
+                                            </constraints>
                                         </stackView>
                                     </subviews>
                                     <constraints>
