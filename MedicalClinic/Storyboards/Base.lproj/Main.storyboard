@@ -109,7 +109,6 @@
         <!--Специалисты-->
         <scene sceneID="cTS-FD-86c">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WlK-lA-2ap" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController id="7AV-QA-ue2" customClass="ProfessionsViewController" customModule="MedicalClinic" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="pcG-al-Rht">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
@@ -142,7 +141,7 @@
                             </subviews>
                             <color key="backgroundColor" red="0.98968197599999996" green="0.98968197599999996" blue="0.98968197599999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
-                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Jje-R6-sSM" secondAttribute="trailing" constant="220.33333333333334" id="kX7-WK-XIH"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Jje-R6-sSM" secondAttribute="trailing" id="kX7-WK-XIH"/>
                                 <constraint firstItem="vxK-Be-FwA" firstAttribute="top" secondItem="Jje-R6-sSM" secondAttribute="bottom" constant="15" id="m16-4o-X5W"/>
                                 <constraint firstItem="vxK-Be-FwA" firstAttribute="centerX" secondItem="ADG-Fi-12j" secondAttribute="centerX" id="snQ-I1-Ld7"/>
                                 <constraint firstItem="Jje-R6-sSM" firstAttribute="leading" secondItem="ADG-Fi-12j" secondAttribute="leading" constant="15" id="wMV-kB-Wrd"/>
@@ -200,6 +199,7 @@
                         <outlet property="searchBar" destination="vxK-Be-FwA" id="FRa-sm-BeB"/>
                     </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WlK-lA-2ap" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="186.97674418604652" y="484.76394849785413"/>
         </scene>
@@ -353,7 +353,6 @@
         <!--Item-->
         <scene sceneID="KHu-nz-UTt">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Lty-iB-hKc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController id="4pM-4K-RE7" customClass="PatientResultsViewController" customModule="MedicalClinic" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="ADG-IC-J6t">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
@@ -435,6 +434,7 @@
                     <tabBarItem key="tabBarItem" title="Item" id="LiF-gt-0Dv"/>
                     <navigationItem key="navigationItem" id="Wav-b5-gT0"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lty-iB-hKc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1331.1627906976744" y="1890.7725321888413"/>
         </scene>
