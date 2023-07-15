@@ -11,8 +11,8 @@
 ## Interface
 
 * Home screen 
-  
-  ![Снимок экрана 2023-07-15 в 19 44 41](https://github.com/Slavk11/MedicalClinic/assets/105375579/863a4a3b-8679-44f9-a182-57645688e316)
+
+![Снимок экрана 2023-07-15 в 19 52 34](https://github.com/Slavk11/MedicalClinic/assets/105375579/1e66a752-f201-403f-8b5b-b6f8ed2c2b20)
 
 * Analyzes
 
