@@ -8,7 +8,7 @@
 * В этом приложении используется вымышленные данные (файл хранилища данных), все медицинские специалисты являются вымышленными, результаты анализов тоже.
 * Для создания интерфейса использовался Xcode Storyboard. Интерфейс адаптирован для устройств с различными размерами экрана, начиная от iPhone SE (1-го поколения) до iPhone 14 Pro Max.
 * Проект был реализован в соответствии с принципами MVC.
-
+---
 * MedicalClinic is a native application written in the Swift programming language.
 * In this application, used Mock-Data (Data Store file), all medical specialists are fictional and not real, and the analysis results are also fictional.
 * To create the interface, used Xcode Storyboard . The interface is adapted for devices with various display sizes, ranging from iPhone SE (1st generation) to iPhone 14 Pro Max.
