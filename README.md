@@ -13,7 +13,7 @@
 
 * Home screen 
 
-![Снимок экрана 2023-07-15 в 19 52 34](https://github.com/Slavk11/MedicalClinic/assets/105375579/1e66a752-f201-403f-8b5b-b6f8ed2c2b20) ➡️ ![Снимок экрана 2023-07-16 в 12 56 14](https://github.com/Slavk11/MedicalClinic/assets/105375579/5a4a92df-7811-4470-ada6-cfe8eb5b4662)
+![Снимок экрана 2023-07-15 в 19 52 34](https://github.com/Slavk11/MedicalClinic/assets/105375579/1e66a752-f201-403f-8b5b-b6f8ed2c2b20) ![Снимок экрана 2023-07-16 в 12 56 14](https://github.com/Slavk11/MedicalClinic/assets/105375579/5a4a92df-7811-4470-ada6-cfe8eb5b4662)
 
 
 * Analyzes
