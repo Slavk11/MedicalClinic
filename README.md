@@ -7,6 +7,7 @@
 * MedicalClinic is a native application written in the Swift programming language.
 * In this application, used Mock-Data (Data Store file), all medical specialists are fictional and not real, and the analysis results are also fictional.
 * To create the interface, used Xcode Storyboard . The interface is adapted for devices with various display sizes, ranging from iPhone SE (1st generation) to iPhone 14 Pro Max.
+* The project has been implemented in accordance with the principles of MVC.
 
 ## Interface
 
