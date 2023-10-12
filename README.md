@@ -7,13 +7,13 @@
 * MedicalClinic - приложение, написанное на языке программирования Swift.
 * Данное приложение предназначено для использования пациентами, в приложении можно узнать актуальные новости, посмотреть доступные услуги, также есть личный кабинет пациента.
 * В этом приложении используется вымышленные данные (файл хранилища данных), все медицинские специалисты являются вымышленными, результаты анализов тоже.
-* Для создания интерфейса использовался Xcode Storyboard. Интерфейс адаптирован для устройств с различными размерами экрана, начиная от iPhone SE (1-го поколения) до iPhone 14 Pro Max.
+* Для создания интерфейса использовался Xcode Storyboard. Интерфейс адаптирован для устройств с различными размерами экрана, начиная от iPhone SE (1-го поколения) до iPhone 15 Pro Max.
 * Проект был реализован в соответствии с принципами MVC.
 ---
 * MedicalClinic is a native application written in the Swift programming language.
 * This application is intended for use by patients. In the app, you can find up-to-date news, view available services, and there is also a patient's personal account.
 * In this application, used Mock-Data (Data Store file), all medical specialists are fictional and not real, and the analysis results are also fictional.
-* To create the interface, used Xcode Storyboard . The interface is adapted for devices with various display sizes, ranging from iPhone SE (1st generation) to iPhone 14 Pro Max.
+* To create the interface, used Xcode Storyboard . The interface is adapted for devices with various display sizes, ranging from iPhone SE (1st generation) to iPhone 15 Pro Max.
 * The project has been implemented in accordance with the principles of MVC.
 ---
 ## Interface
