@@ -1,8 +1,7 @@
 # Project: MedicalClinic
 
 ![AppIcon](https://github.com/Slavk11/MedicalClinic/assets/105375579/3740d4c4-1d93-4af7-89c0-bb5a0ea09f15)
-
-![МС_Иконка_Монтажная область 1](https://github.com/Slavk11/MedicalClinic/assets/105375579/f8a30f6e-c14c-47fb-8f6e-2bf17b6f9deb)
+![МС_Иконка_Монтажная область 1](https://github.com/Slavk11/MedicalClinic/assets/105375579/685d797a-fe0f-436e-a3e9-f7ba9b72973d)
 
 ## Review
 
