@@ -20,7 +20,7 @@
 ---
 ## Interface
 
-![Medical Group](https://github.com/Slavk11/MedicalClinic/assets/105375579/32962413-3318-4d4e-bfce-0dc1da9d28cf)
+![Medical Group](https://github.com/Slavk11/MedicalClinic/assets/105375579/7ef32692-0362-4894-98ca-ea74451aa69e)
 
 * Home screen 
 
